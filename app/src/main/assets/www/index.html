@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fiore Viewer</title>
+	<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="root">
+        <nav class="navbar">
+            <ul class="nav-list">
+                <li class="dropdown min-85">
+                    <span class="nav-item" id="version-selector">🇬</span>
+                    <ul class="dropdown-menu dropdown-menu-l" id="version-dropdown"></ul>
+                </li>
+                <li class="dropdown">
+                    <span class="nav-item" id="section-selector">🔪</span>
+                    <ul class="dropdown-menu" id="section-dropdown"></ul>
+                </li>
+                <li class="dropdown">
+                    <span class="nav-item" id="maitre-selector">1</span>
+                    <ul class="dropdown-menu" id="maitre-dropdown"></ul>
+                </li>
+                <li class="dropdown">
+                    <span class="nav-item" id="jeu-selector">1</span>
+                    <ul class="dropdown-menu" id="jeu-dropdown"></ul>
+                </li>
+            </ul>
+        </nav>
+        <input type="range" id="piece-slider" class="piece-slider show" min="0" />
+        <div class="image-text"><div class="jeu-text" id="jeu-texte"></div><div class="jeu-notes" id="jeu-notes" contenteditable=""></div></div>
+        <div class="image-container" id="image-container">
+            <img class="gallery-image" id="gallery-image" alt="Gallery Image" src="">
+        </div>
+    </div>
+    <script src="./app.js"></script>
+</body>
+</html>

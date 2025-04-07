@@ -1,0 +1,251 @@
+
+:root {
+	font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+	line-height: 1.5;
+	font-weight: 400;
+	color-scheme: light dark;
+	color: rgba(255, 255, 255, 0.87);
+	background-color: #242424;
+}
+
+body {
+	margin: 0;
+	display: flex;
+	place-items: center;
+	min-width: 320px;
+	min-height: 100vh;
+	background-color: #242424;
+}
+
+#root {
+	max-width: 750px;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.min-85 {
+	min-width: 85px;
+	text-align: left;
+}
+
+.navbar {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	background-color: #282c34;
+	padding: 1rem;
+	z-index: 1000;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.nav-list {
+	display: flex;
+	margin: 0;
+	padding: 0;
+	gap: 1rem;
+	list-style: none;
+}
+
+.nav-item {
+	color: #61dafb;
+	text-decoration: none;
+	transition: color 0.3s;
+	cursor: pointer;
+	padding: 5px;
+}
+
+.nav-item:hover {
+	color: #4fa8d5;
+}
+
+.piece-slider {
+	--webkit-appearance: none;
+	-webkit-appearance: none;
+	appearance: none;
+	display: block;
+	position: absolute;
+	top: 51px;
+	transform: translateX(-50.5%);
+	width: 100vw;
+	z-index: 1000;
+	height: 5px;
+	background: #363b44;
+	color: #363b44;
+	outline: none;
+	opacity: 0.7;
+	display: none;
+}
+
+.piece-slider::-webkit-slider-thumb {
+	--webkit-appearance: none;
+	-webkit-appearance: none;
+	appearance: none;
+	width: 25px;
+	height: 25px;
+	border-radius: 50%; 
+	background: #242424;
+	cursor: pointer;
+	border: 1px solid #6b6b6b;
+	outline-color: #6b6b6b;
+}
+
+.piece-slider::-moz-range-thumb {
+	width: 25px;
+	height: 25px;
+	border-radius: 50%;
+	background: #242424;
+	cursor: pointer;
+	border: 1px solid #6b6b6b;
+	outline-color: #6b6b6b;
+}
+
+
+.image-text {
+	font-size: 1.2rem;
+	color: white;
+	text-align: left;
+	max-width: 650px;
+	top: 5rem;
+	position: fixed;
+	white-space: pre-line;
+	display: flex;
+	flex-direction: column;
+}
+
+.jeu-text {
+	margin-bottom:20px;
+}
+
+.jeu-notes {
+	background: #333;
+	border: 1px solid #333;
+	border-radius: 4px;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-bottom: 5px;
+	font-size: 1rem;
+	margin-top: auto;
+}
+.jeu-notes:empty {
+	background: inherit;
+}
+
+.image-container {
+	position: fixed;
+	cursor: pointer;
+	width: 686px;
+	height: 600px;
+	overflow: hidden;
+	border-radius: 8px;
+	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.gallery-image {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	transition: transform 0.3s ease;
+}
+
+.dropdown {
+	position: relative;
+}
+
+.dropdown-menu {
+	position: absolute;
+	top: 100%;
+	left: 50%;
+	transform: translateX(-90%);
+	background-color: #282c34;
+	border: 1px solid #4fa8d5;
+	border-radius: 4px;
+	padding: 0.5rem 0;
+	margin-top: 0.5rem;
+	list-style: none;
+	min-width: 120px;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+	z-index: 1000;
+	overflow: auto;
+	max-height: 90vh;
+	display: none;
+}
+
+.show {
+	display: block;
+}
+
+.dropdown-menu-l {
+	transform: translateX(-20%);
+}
+
+.dropdown-menu li {
+	padding: 0.5rem 1rem;
+	color: #61dafb;
+	cursor: pointer;
+	transition: background-color 0.2s;
+}
+
+.dropdown-menu li:hover {
+	background-color: #363b44;
+	color: #4fa8d5;
+}
+
+@media (max-aspect-ratio: 120/160) {
+	.image-text {
+		max-height: calc(100% - 100vw/1.16 - 70px);
+		height: calc(100% - 100vw/1.16 - 70px);
+		transform: translateX(-50%);
+		width: 90%;
+		padding: 10px;
+		overflow: auto;
+		top: 55px;
+	}
+
+	.image-container {
+		left: 50%;
+		transform: translateX(-50%);
+		bottom: 0px;
+		width: 100%;
+		height: auto;
+		aspect-ratio: 686/578;
+	}
+}
+
+@media (min-aspect-ratio: 121/160) {
+	.image-text {
+		padding: 10px;
+		overflow: auto;
+		max-height: 82vh;
+		height: 82vh;
+		top: 60px;
+		left: 0px;
+		max-width: 48%;
+	}
+
+	.image-container {
+		aspect-ratio: 686/578;
+		width: auto;
+		right: 0px;
+		transform: translateX(-0.5em);
+		max-width: 49%;
+		max-height: 84vh;
+		top: 60px;
+	}
+}
+
+@media (max-height: 150px) {
+	.navbar {
+		display: none;
+	}
+	.image-text {
+		top: 0px;
+	}
+	.image-container {
+		top: 0px;
+	}
+	.piece-slider{
+		top: 0px;
+	}
+}
+
