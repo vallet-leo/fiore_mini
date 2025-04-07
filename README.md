@@ -22,31 +22,10 @@ The project follows the standard Android project structure:
 ### Steps to Build
 
 1. Open the project in Android Studio
-2. Run the `copy_web_assets.bat` script to copy the web app files to the assets directory
-3. Build the project using Android Studio or Gradle
+2. Build the project using Android Studio or Gradle
 
 ```
 ./gradlew assembleDebug
 ```
 
-4. The APK file will be generated in `app/build/outputs/apk/debug/`
-
-## Running the App
-
-1. Install the APK on an Android device or emulator
-2. Launch the app from the device's app drawer
-
-## Features
-
-- Displays the Fiore Mini web app in a native Android container
-- Supports JavaScript and local storage
-- Handles back button navigation within the WebView
-- Works offline as all assets are bundled with the app
-
-## Customization
-
-You can customize the app by modifying the following files:
-
-- `app/src/main/res/values/strings.xml`: Change the app name
-- `app/src/main/res/values/styles.xml`: Customize the app theme
-- `app/src/main/AndroidManifest.xml`: Add additional permissions or features
+3. The APK file will be generated in `app/build/outputs/apk/debug/`
