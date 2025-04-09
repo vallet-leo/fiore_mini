@@ -13,10 +13,10 @@ public class WebAppInterface {
         mContext = c;
     }
 
-    /** Show a toast from the web page. */
+
     @JavascriptInterface
     public String loadZhogo() {
-        String retour = "Test";
+        String retour;
         try {
             InputStream fis = mContext.getAssets().open("jeux.json");
             retour = new String(fis.readAllBytes());
@@ -24,5 +24,19 @@ public class WebAppInterface {
             retour=e.getMessage();
         }
         return retour;
+    }
+
+
+//
+    @JavascriptInterface
+    public String loadIntros() {
+        String s;
+        try {
+            InputStream fis = mContext.getAssets().open("intros.json");
+            s = new String(fis.readAllBytes());
+        } catch (Exception e){
+            s=e.getMessage();
+        }
+        return s;
     }
 }

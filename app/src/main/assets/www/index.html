@@ -10,6 +10,9 @@
     <div id="root">
         <nav class="navbar">
             <ul class="nav-list">
+                <li>
+                    <span class="nav-item" id="sidebar-toggle">☰</span>
+                </li>
                 <li class="dropdown min-85">
                     <span class="nav-item" id="version-selector">🇬</span>
                     <ul class="dropdown-menu dropdown-menu-l" id="version-dropdown"></ul>
@@ -28,8 +31,27 @@
                 </li>
             </ul>
         </nav>
-        <input type="range" id="piece-slider" class="piece-slider show" min="0" />
-        <div class="image-text"><div class="jeu-text" id="jeu-texte"></div><div class="jeu-notes" id="jeu-notes" contenteditable=""></div></div>
+        <div class="sidebar" id="sidebar">
+            <div class="sidebar-content">
+                <p class="sidebar-item" id="close-sidebar">X</p>
+                <ul class="sidebar-menu">
+                    <li>Zhogi</li>
+                    <li class="sidebar-item" id="order-all">📖 All</li>
+                    <li class="sidebar-item" id="order-getty">📖 Getty</li>
+                    <li class="sidebar-item" id="order-novati">📖 Novati</li>
+                    <li>Intros</li>
+                    <li class="sidebar-item" id="intro-getty">📜 Getty</li>
+                    <li class="sidebar-item" id="intro-novati">📜 Novati</li>
+                    <li style="margin-top: auto;">About</li>
+                    <li style="text-align:left;">Transcriptions : <a href="https://wiktenauer.com/wiki/Fiore">wiktenauer</a></li>
+                    <li style="text-align:left;">en version : <a href="https://wiktenauer.com/wiki/Fiore">wiktenauer</a></li>
+                    <li style="text-align:left;">fr version : <a href="https://www.dropbox.com/scl/fi/lgsyu13n6cpnf52n25kcd/Fiore_Getty.pdf">Benjamin Conan</a></li>
+                    <li style="text-align:left;">Licences : <a href="https://creativecommons.org/licenses/">Creative commons</a></li>
+                </ul>
+            </div>
+        </div>
+        <label for="piece-slider"></label><input type="range" id="piece-slider" class="piece-slider show" min="0" />
+        <div class="image-text" id="image-text"><div class="jeu-text" id="jeu-texte"></div><div class="jeu-notes" id="jeu-notes" contenteditable=""></div></div>
         <div class="image-container" id="image-container">
             <img class="gallery-image" id="gallery-image" alt="Gallery Image" src="">
         </div>
