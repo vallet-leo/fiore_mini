@@ -215,7 +215,7 @@ function updateUI() {
 
     // Update navigation items
     versionSelector.textContent = `${manuscriptDict[source]} ${currentPiece[source + '_ref']}`;
-    sectionSelector.textContent = sectionDict[currentPiece.section];
+    sectionSelector.innerHTML = Android.getSvg(currentPiece.section);//textContent = sectionDict[currentPiece.section];
     maitreSelector.textContent = "👑 " + currentPiece.maitre;
     jeuSelector.textContent = "🔸 " + (state.idx - master_index +1);
 
