@@ -1,9 +1,13 @@
 package com.fioremini.app;
 
 import android.content.Context;
+import android.content.res.AssetManager;
 import android.webkit.JavascriptInterface;
 
+import java.io.BufferedReader;
 import java.io.InputStream;
+import java.io.InputStreamReader;
+import java.util.stream.Collectors;
 
 public class WebAppInterface {
     Context mContext;
@@ -19,7 +23,8 @@ public class WebAppInterface {
         String retour;
         try {
             InputStream fis = mContext.getAssets().open("jeux.json");
-            retour = new String(fis.readAllBytes());
+            retour = new BufferedReader(new InputStreamReader(fis))
+                    .lines().parallel().collect(Collectors.joining("\n"));
         } catch (Exception e){
             retour=e.getMessage();
         }
@@ -27,16 +32,31 @@ public class WebAppInterface {
     }
 
 
-//
+    //
     @JavascriptInterface
     public String loadIntros() {
         String s;
         try {
             InputStream fis = mContext.getAssets().open("intros.json");
-            s = new String(fis.readAllBytes());
+            s = new BufferedReader(new InputStreamReader(fis))
+                    .lines().parallel().collect(Collectors.joining("\n"));
         } catch (Exception e){
             s=e.getMessage();
         }
         return s;
+    }
+
+    @JavascriptInterface
+    public String getSvg(String id) {
+        String svg;
+        try {
+            AssetManager assets = mContext.getAssets();
+            InputStream fis = assets.open(id + ".xml");
+            svg = new BufferedReader(new InputStreamReader(fis))
+                    .lines().parallel().collect(Collectors.joining("\n"));
+        } catch (Exception e){
+            svg=e.getMessage();
+        }
+        return svg;
     }
 }
