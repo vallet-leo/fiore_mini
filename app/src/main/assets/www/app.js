@@ -15,7 +15,7 @@ let state = {
 };
 
 // Constants
-const sectionDict = { "daga": "🔪", "spada_daga": "🔪🗡️", "spada1h": "🗡️", "spada2": "⚔️" };
+const sections = ["daga","spada_daga","spada1h","spada2"];
 const manuscriptDict = { "getty": "🇬", "novati": "🇳", "paris": "🇵", "morgan": "🇲" };
 
 // DOM Elements
@@ -215,7 +215,7 @@ function updateUI() {
 
     // Update navigation items
     versionSelector.textContent = `${manuscriptDict[source]} ${currentPiece[source + '_ref']}`;
-    sectionSelector.innerHTML = Android.getSvg(currentPiece.section);//textContent = sectionDict[currentPiece.section];
+    sectionSelector.innerHTML = Android.getSvg(currentPiece.section);
     maitreSelector.textContent = "👑 " + currentPiece.maitre;
     jeuSelector.textContent = "🔸 " + (state.idx - master_index +1);
 
@@ -253,9 +253,9 @@ function updateDropdowns() {
 
     // Section dropdown
     sectionDropdown.innerHTML = '';
-    Object.entries(sectionDict).forEach(([section, icon]) => {
+    sections.forEach(section => {
         const li = document.createElement('li');
-        li.textContent = `${icon} `; //${section}
+        li.innerHTML = Android.getSvg(section);; //${section}
         li.onclick = () => handleSectionSelect(section);
         sectionDropdown.appendChild(li);
     });
