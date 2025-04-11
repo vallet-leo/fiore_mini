@@ -1,4 +1,22 @@
+@font-face {
+    font-family: 'fullTime';
+    src: url('times5.ttf');
+}
 
+
+.capitulum-r::before {
+    content: '⸿';
+    font-family: 'fullTime';
+    font-size: 1.2rem;
+    color: crimson;
+}
+
+.capitulum-b::before {
+    content: '⸿';
+    font-size: 1.2rem;
+    font-family: 'fullTime';
+    color: steelblue;
+}
 :root {
 	font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
 	line-height: 1.5;

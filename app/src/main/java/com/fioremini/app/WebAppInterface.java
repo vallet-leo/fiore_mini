@@ -28,7 +28,7 @@ public class WebAppInterface {
         } catch (Exception e){
             retour=e.getMessage();
         }
-        return retour;
+        return replacePilcrow(retour);
     }
 
 
@@ -43,7 +43,7 @@ public class WebAppInterface {
         } catch (Exception e){
             s=e.getMessage();
         }
-        return s;
+        return replacePilcrow(s);
     }
 
     @JavascriptInterface
@@ -58,5 +58,23 @@ public class WebAppInterface {
             svg=e.getMessage();
         }
         return svg;
+    }
+
+
+    private String replacePilcrow(String s){
+        if (s==null) return "";
+        String st = s.replaceAll("¶ ", "¶");
+
+        String[] stArray = st.split("¶");
+        StringBuilder sb = new StringBuilder(stArray[0]);
+        for (int i=1; i<stArray.length; i++) {
+            if (i%2==0){
+                sb.append("<span class='capitulum-b'/>&nbsp;");
+            } else {
+                sb.append("<span class='capitulum-r'/>&nbsp;");
+            }
+            sb.append(stArray[i]);
+        }
+        return sb.toString();
     }
 }

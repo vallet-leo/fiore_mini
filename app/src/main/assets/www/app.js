@@ -1,7 +1,6 @@
 
-
-const jeux = JSON.parse(Android.loadZhogo());
 const intros = JSON.parse(Android.loadIntros());
+const jeux = JSON.parse(Android.loadZhogo());
 
 // State management
 
@@ -16,7 +15,7 @@ let state = {
 
 // Constants
 const sections = ["daga","spada_daga","spada1h","spada2"];
-const manuscriptDict = { "getty": "🇬", "novati": "🇳", "paris": "🇵", "morgan": "🇲" };
+const manuscriptDict = { "getty": "G", "novati": "N", "paris": "🇵", "morgan": "🇲" };
 
 // DOM Elements
 const versionSelector = document.getElementById('version-selector');
@@ -221,7 +220,7 @@ function updateUI() {
 
     // Update image and text
     galleryImage.src = `./img/${source}/${source}_${currentPiece[id_img]}.jpg`;
-    zhogoText.textContent = currentPiece[id_txt];
+    zhogoText.innerHTML = currentPiece[id_txt];
     zhogoNote.textContent =  localStorage.getItem(`notes_${source}_${currentPiece[id_img]}`) || "";
 
     updateDropdowns();
@@ -287,7 +286,7 @@ versionSelector.addEventListener('click', (e) => {e.stopPropagation; closeAllDro
 sectionSelector.addEventListener('click', (e) => {e.stopPropagation; closeAllDropdownsExcept(sectionDropdown);});
 maitreSelector.addEventListener('click', (e) => {e.stopPropagation; closeAllDropdownsExcept(maitreDropdown);});
 jeuSelector.addEventListener('click', (e) => {e.stopPropagation; closeAllDropdownsExcept(jeuDropdown);});
-slider.addEventListener('input', (e) => {state.idx = e.target.value; updateUI();});
+slider.addEventListener('input', (e) => {state.idx = Number(e.target.value); updateUI();});
 sidebarToggle.addEventListener('click', function() {sidebar.classList.toggle('open');});
 galleryImage.addEventListener('error', () => {galleryImage.src = `./img/getty/getty_27v-d.jpg`;});
 document.getElementById('close-sidebar').addEventListener('click', function() {sidebar.classList.remove('open'); });
