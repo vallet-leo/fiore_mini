@@ -15,7 +15,7 @@ let state = {
 
 // Constants
 const sections = ["daga","spada_daga","spada1h","spada2"];
-const manuscriptDict = { "getty": "G", "novati": "N", "paris": "🇵", "morgan": "🇲" };
+const manuscriptDict = { "getty": "🄶", "novati": "🄽", "paris": "🇵", "morgan": "🇲" };
 
 // DOM Elements
 const versionSelector = document.getElementById('version-selector');
