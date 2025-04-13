@@ -90,8 +90,8 @@ a {
 .sidebar {
 	position: fixed;
 	top: 0;
-	left: -250px; /* Start off-screen */
-	width: 250px;
+	left: -300px; /* Start off-screen */
+	width: 300px;
 	height: 100vh;
 	background-color: #282c34;
 	z-index: 1001;
@@ -264,6 +264,11 @@ a {
 }
 
 .dropdown-menu li:hover {
+	background-color: #363b44;
+	color: #4fa8d5;
+}
+
+.selected {
 	background-color: #363b44;
 	color: #4fa8d5;
 }

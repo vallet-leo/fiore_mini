@@ -28,22 +28,32 @@ public class WebAppInterface {
         } catch (Exception e){
             retour=e.getMessage();
         }
-        return replacePilcrow(retour);
+        return retour;
     }
 
 
     //
     @JavascriptInterface
-    public String loadIntros() {
-        String s;
-        try {
-            InputStream fis = mContext.getAssets().open("intros.json");
-            s = new BufferedReader(new InputStreamReader(fis))
-                    .lines().parallel().collect(Collectors.joining("\n"));
-        } catch (Exception e){
-            s=e.getMessage();
+    public String loadLangs() {
+        StringBuilder sb = new StringBuilder("{");
+
+        for(String langFile : getAllI18n()){
+            String lang = langFile.split("_")[1].split("\\.")[0];
+            String content;
+            try {
+                InputStream fis = mContext.getAssets().open(langFile);
+                content = new BufferedReader(new InputStreamReader(fis))
+                        .lines().parallel().collect(Collectors.joining("\n"));
+            } catch (Exception e){
+                content=e.getMessage();
+            }
+            sb.append("\"").append(lang).append("\"").append(":");
+            sb.append(replacePilcrow(content));
+            sb.append(",");
         }
-        return replacePilcrow(s);
+        sb.deleteCharAt(sb.length() - 1);
+        sb.append("}");
+    return sb.toString();
     }
 
     @JavascriptInterface
@@ -76,5 +86,10 @@ public class WebAppInterface {
             sb.append(stArray[i]);
         }
         return sb.toString();
+    }
+
+    // Return all i18n files. To improve: should return all files found
+    private String[] getAllI18n(){
+        return new String[]{"i18n_fr.json", "i18n_en.json", "i18n_o.json"};
     }
 }

@@ -1,16 +1,16 @@
-
-const intros = JSON.parse(Android.loadIntros());
 const jeux = JSON.parse(Android.loadZhogo());
+const langs = JSON.parse(Android.loadLangs());
 
 // State management
 
-let state = {
+let state = JSON.parse(localStorage.getItem('fioremini_state')) || {
     touchStart: null,
     mode: 'all',
     pieces: jeux,
-    idx: 0,
+    idx: 207,
     lang: 'fr',
-    preferredSource: 'getty'
+    preferredSource: 'getty',
+    source: 'getty'
 };
 
 // Constants
@@ -90,7 +90,6 @@ function closeAllDropdownsExcept(d) {
 }
 
 function handleVersionSelect(source, lang) {
-    console.log(source, lang);
     state.preferredSource = source;
     state.lang = lang;
     closeAllDropdowns();
@@ -167,8 +166,11 @@ function handleReadIntro(source){
     zhogoCont.classList.add('full-height');
     sidebar.classList.remove('open');
     state.preferredSource = source;
-    state.pieces= [{"getty_fr" : intros['intro.getty.fr'],"getty_en" : intros['intro.getty.en'],"getty_o" : intros['intro.getty.o'], "getty_ref" : "Intro",
-                "novati_fr" : intros['intro.novati.fr'],"novati_en" : intros['intro.novati.en'],"novati_o" : intros['intro.novati.o'], "novati_ref" : "Intro"} ];
+    state.pieces= [{    "section": "Intros",
+                        "maitre": "",
+                        "jeu": "",
+                        "getty_ref": "Intro",
+                        "novati_ref": "Intro"}];
     state.idx = 0;
     
     slider.max = state.pieces.length - 1;
@@ -186,7 +188,7 @@ function handleSortClick(version){
     maitreSelector.classList.remove('hide');
     jeuSelector.classList.remove('hide');
     if (!version.startsWith("all")){
-        state.pieces = jeux.filter(piece => piece[version] != '').sort((a, b) => compareCorrectMovedPages(a, b, version));
+        state.pieces = jeux.filter(piece => piece.hasOwnProperty(version) && (piece[version] != '')).sort((a, b) => compareCorrectMovedPages(a, b, version));
         state.preferredSource = version.split("_")[0];
         state.mode = version.split("_")[0];
     }
@@ -205,12 +207,12 @@ function handleSortClick(version){
 function updateUI() {
     const currentPiece = state.pieces[state.idx];
     const master_index = state.pieces.findIndex(piece => (piece.maitre === state.pieces[state.idx].maitre) && (state.pieces[state.idx].section == piece.section))
-    const source = currentPiece[state.preferredSource + '_ref'] !== '' ? 
+    const source = (currentPiece.hasOwnProperty(state.preferredSource + '_ref') && (currentPiece[state.preferredSource + '_ref'] !== '')) ? 
         state.preferredSource : 
         (state.preferredSource === 'novati' ? 'getty' : 'novati');
-    
-    const id_img = source.toLowerCase() + '_ref';
-    const id_txt = source.toLowerCase() + '_' + state.lang;
+    const piece_ref = currentPiece[source.toLowerCase() + '_ref'];
+
+    state.source = source;
 
     // Update navigation items
     versionSelector.textContent = `${manuscriptDict[source]} ${currentPiece[source + '_ref']}`;
@@ -219,33 +221,38 @@ function updateUI() {
     jeuSelector.textContent = "🔸 " + (state.idx - master_index +1);
 
     // Update image and text
-    galleryImage.src = `./img/${source}/${source}_${currentPiece[id_img]}.jpg`;
-    zhogoText.innerHTML = currentPiece[id_txt];
-    zhogoNote.textContent =  localStorage.getItem(`notes_${source}_${currentPiece[id_img]}`) || "";
-
+    galleryImage.src = `./img/${source}/${source}_${piece_ref}.jpg`;
+    zhogoText.innerHTML = langs[state.lang][source+"."+piece_ref];
+    zhogoNote.textContent =  localStorage.getItem(`notes_${source}_${piece_ref}`) || "";
+    localStorage.setItem('fioremini_state', JSON.stringify(state));
     updateDropdowns();
 }
 
 function updateDropdowns() {
     // Version dropdown
     versionDropdown.innerHTML = '';
+    const hasGettyVer =  (state.pieces[state.idx].hasOwnProperty('getty_ref')) && (state.pieces[state.idx].getty_ref !== '');
+    const hasNovatiVer = (state.pieces[state.idx].hasOwnProperty('novati_ref')) && (state.pieces[state.idx].novati_ref !== '');
+
     ['fr', 'en', 'o'].forEach(lang => {
-        if (state.pieces[state.idx].getty_ref !== '') {
+        if (hasGettyVer) {
             const li = document.createElement('li');
             li.textContent = `Getty | ${lang}`;
             li.onclick = () => handleVersionSelect('getty', lang);
+            if ((lang === state.lang) && (state.source === 'getty')) li.classList.add('selected');
             versionDropdown.appendChild(li);
         }
     });
-    if (state.pieces[state.idx].novati_ref !== '' && state.pieces[state.idx].getty_ref !== '') {
+    if (hasNovatiVer && hasGettyVer) {
         const hr = document.createElement('hr');
         versionDropdown.appendChild(hr);
     }
     ['fr', 'en', 'o'].forEach(lang => {
-        if (state.pieces[state.idx].novati_ref !== '') {
+        if (hasNovatiVer) {
             const li = document.createElement('li');
             li.textContent = `Novati | ${lang}`;
             li.onclick = () => handleVersionSelect('novati', lang);
+            if ((lang === state.lang) && (state.source === 'novati')) li.classList.add('selected');
             versionDropdown.appendChild(li);
         }
     });
@@ -254,7 +261,7 @@ function updateDropdowns() {
     sectionDropdown.innerHTML = '';
     sections.forEach(section => {
         const li = document.createElement('li');
-        li.innerHTML = Android.getSvg(section);; //${section}
+        li.innerHTML = Android.getSvg(section);
         li.onclick = () => handleSectionSelect(section);
         sectionDropdown.appendChild(li);
     });
@@ -297,10 +304,8 @@ document.getElementById('intro-getty').addEventListener('click', function() {han
 document.getElementById('intro-novati').addEventListener('click', function() {handleReadIntro("novati")});
 zhogoNote.addEventListener('blur', (e) => {
     const currentPiece = state.pieces[state.idx];
-    const source = currentPiece[state.preferredSource + '_ref'] !== '' ? 
-        state.preferredSource : (state.preferredSource === 'novati' ? 'getty' : 'novati');
-    const id_img = source.toLowerCase() + '_ref';
-    localStorage.setItem(`notes_${source}_${currentPiece[id_img]}`, e.target.textContent);
+    const id_img = state.source.toLowerCase() + '_ref';
+    localStorage.setItem(`notes_${state.source}_${currentPiece[id_img]}`, e.target.textContent);
 
 });
 document.addEventListener('click', (e) => {
@@ -315,7 +320,7 @@ document.addEventListener('click', (e) => {
 
 // Initial UI setup
 
-state.idx = state.pieces.length - 1;
+//state.idx = state.pieces.length - 1;
 slider.max = state.pieces.length - 1;
 slider.value = state.idx;
 updateUI();
