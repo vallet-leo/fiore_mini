@@ -14,7 +14,7 @@ let state = JSON.parse(localStorage.getItem('fioremini_state')) || {
 };
 
 // Constants
-const sections = ["daga","spada_daga","spada1h","spada2"];
+const sections = ["intros", "daga","spada_daga","spada1h","spada2"];
 const manuscriptDict = { "getty": "🄶", "novati": "🄽", "paris": "🇵", "morgan": "🇲" };
 
 // DOM Elements
@@ -97,6 +97,13 @@ function handleVersionSelect(source, lang) {
 }
 
 function handleSectionSelect(section) {
+    if (section == "intros") {
+        handleReadIntro();
+        return;
+    }
+    if (state.pieces[0].section == "intros"){
+        handleSortClick(state.mode);
+    }
     const index = state.pieces.findIndex(piece => piece.section === section);
     if (index !== -1) {
         state.idx = index;
@@ -161,12 +168,11 @@ function handleTouchEnd(e) {
     updateUI();
 }
 
-function handleReadIntro(source){
+function handleReadIntro(){
     imageContainer.classList.add('hide');
     zhogoCont.classList.add('full-height');
     sidebar.classList.remove('open');
-    state.preferredSource = source;
-    state.pieces= [{    "section": "Intros",
+    state.pieces= [{    "section": "intros",
                         "maitre": "",
                         "jeu": "",
                         "getty_ref": "Intro",
@@ -174,7 +180,6 @@ function handleReadIntro(source){
     state.idx = 0;
     
     slider.max = state.pieces.length - 1;
-    sectionSelector.classList.add('hide');
     maitreSelector.classList.add('hide');
     jeuSelector.classList.add('hide');
     closeAllDropdowns();
@@ -184,7 +189,6 @@ function handleReadIntro(source){
 function handleSortClick(version){
     imageContainer.classList.remove('hide');
     zhogoCont.classList.remove('full-height');
-    sectionSelector.classList.remove('hide');
     maitreSelector.classList.remove('hide');
     jeuSelector.classList.remove('hide');
     if (!version.startsWith("all")){
@@ -300,8 +304,6 @@ document.getElementById('close-sidebar').addEventListener('click', function() {s
 document.getElementById('order-all').addEventListener('click', function() {handleSortClick("all")});
 document.getElementById('order-getty').addEventListener('click', function() {handleSortClick("getty_ref")});
 document.getElementById('order-novati').addEventListener('click', function() {handleSortClick("novati_ref")});
-document.getElementById('intro-getty').addEventListener('click', function() {handleReadIntro("getty")});
-document.getElementById('intro-novati').addEventListener('click', function() {handleReadIntro("novati")});
 zhogoNote.addEventListener('blur', (e) => {
     const currentPiece = state.pieces[state.idx];
     const id_img = state.source.toLowerCase() + '_ref';
