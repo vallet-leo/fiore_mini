@@ -2,701 +2,581 @@
     {
         "section": "daga",
         "maitre": 0,
-        "jeu": 1,
         "getty_ref": "09r"
     },
     {
         "section": "daga",
         "maitre": 0,
-        "jeu": 2,
         "getty_ref": "09r-a"
     },
     {
         "section": "daga",
         "maitre": 0,
-        "jeu": 3,
         "getty_ref": "09r-b"
     },
     {
         "section": "daga",
         "maitre": 0,
-        "jeu": 4,
         "getty_ref": "09r-m"
     },
     {
         "section": "daga",
         "maitre": 0,
-        "jeu": 5,
         "getty_ref": "09r-c"
     },
     {
         "section": "daga",
         "maitre": 0,
-        "jeu": 6,
         "getty_ref": "09r-d"
     },
     {
         "section": "daga",
         "maitre": 0,
-        "jeu": 7,
-        "getty_ref": "09v"
+        "getty_ref": "09v-a"
     },
     {
         "section": "daga",
         "maitre": 0,
-        "jeu": 8,
-        "getty_ref": "09v"
+        "getty_ref": "09v-b"
+    },    
+	{
+        "section": "daga",
+        "maitre": 0,
+        "getty_ref": "09v-f"
     },
     {
         "section": "daga",
         "maitre": 0,
-        "jeu": 9,
-        "getty_ref": "09v"
-    },
-    {
-        "section": "daga",
-        "maitre": 0,
-        "jeu": 10,
-        "getty_ref": "09v"
-    },
-    {
-        "section": "daga",
-        "maitre": 0,
-        "jeu": 11,
-        "getty_ref": "09v"
-    },
-    {
-        "section": "daga",
-        "maitre": 0,
-        "jeu": 12,
-        "getty_ref": "09v"
-    },
-    {
-        "section": "daga",
-        "maitre": 0,
-        "jeu": 13,
         "getty_ref": "10r-a",
         "novati_ref": "06a-a"
     },
     {
         "section": "daga",
         "maitre": 0,
-        "jeu": 14,
         "getty_ref": "10r-b",
         "novati_ref": "06a-b"
     },
     {
         "section": "daga",
         "maitre": 0,
-        "jeu": 15,
         "getty_ref": "10r-c",
         "novati_ref": "06a-c"
     },
     {
         "section": "daga",
         "maitre": 0,
-        "jeu": 16,
         "getty_ref": "10r-d",
         "novati_ref": "06a-d"
     },
     {
         "section": "daga",
         "maitre": 1,
-        "jeu": 1,
         "getty_ref": "10v-a",
         "novati_ref": "06a-e"
     },
     {
         "section": "daga",
         "maitre": 1,
-        "jeu": 2,
         "getty_ref": "10v-b",
         "novati_ref": "06a-f"
     },
     {
         "section": "daga",
         "maitre": 1,
-        "jeu": 3,
         "getty_ref": "10v-c",
         "novati_ref": "06b-a"
     },
     {
         "section": "daga",
         "maitre": 1,
-        "jeu": 4,
         "getty_ref": "10v-d",
         "novati_ref": "06b-b"
     },
     {
         "section": "daga",
         "maitre": 1,
-        "jeu": 5,
         "getty_ref": "11r-a",
         "novati_ref": "06b-c"
     },
     {
         "section": "daga",
         "maitre": 1,
-        "jeu": 6,
         "getty_ref": "11r-b",
         "novati_ref": "06b-d"
     },
     {
         "section": "daga",
         "maitre": 1,
-        "jeu": 7,
         "getty_ref": "11r-c"
     },
     {
         "section": "daga",
         "maitre": 1,
-        "jeu": 8,
         "getty_ref": "11r-d"
     },
     {
         "section": "daga",
         "maitre": 1,
-        "jeu": 9,
         "getty_ref": "11v-a",
         "novati_ref": "08a-d"
     },
     {
         "section": "daga",
         "maitre": 1,
-        "jeu": 10,
         "novati_ref": "08a-e"
     },
     {
         "section": "daga",
         "maitre": 1,
-        "jeu": 11,
         "novati_ref": "08a-f"
     },
     {
         "section": "daga",
         "maitre": 1,
-        "jeu": 12,
         "novati_ref": "08a-a"
     },
     {
         "section": "daga",
         "maitre": 1,
-        "jeu": 13,
         "getty_ref": "11v-b",
         "novati_ref": "08a-b"
     },
     {
         "section": "daga",
         "maitre": 1,
-        "jeu": 14,
         "getty_ref": "11v-c",
         "novati_ref": "08a-c"
     },
     {
         "section": "daga",
         "maitre": 1,
-        "jeu": 15,
         "getty_ref": "11v-d",
         "novati_ref": "06b-e"
     },
     {
         "section": "daga",
         "maitre": 1,
-        "jeu": 16,
         "getty_ref": "12r-a",
         "novati_ref": "06b-f"
     },
     {
         "section": "daga",
         "maitre": 1,
-        "jeu": 17,
         "getty_ref": "12r-b",
         "novati_ref": "07a-a"
     },
     {
         "section": "daga",
         "maitre": 1,
-        "jeu": 18,
         "getty_ref": "12r-c",
         "novati_ref": "07a-b"
     },
     {
         "section": "daga",
         "maitre": 1,
-        "jeu": 19,
         "getty_ref": "12r-d",
         "novati_ref": "07a-c"
     },
     {
         "section": "daga",
         "maitre": 1,
-        "jeu": 20,
         "getty_ref": "12v-a",
         "novati_ref": "07a-d"
     },
     {
         "section": "daga",
         "maitre": 1,
-        "jeu": 21,
         "getty_ref": "12v-b",
         "novati_ref": "07a-e"
     },
     {
         "section": "daga",
         "maitre": 1,
-        "jeu": 22,
         "getty_ref": "12v-c",
         "novati_ref": "07a-f"
     },
     {
         "section": "daga",
         "maitre": 1,
-        "jeu": 23,
         "getty_ref": "12v-d",
         "novati_ref": "07b-a"
     },
     {
         "section": "daga",
         "maitre": 1,
-        "jeu": 24,
         "getty_ref": "13r-a",
         "novati_ref": "07b-b"
     },
     {
         "section": "daga",
         "maitre": 2,
-        "jeu": 1,
         "getty_ref": "13r-b",
         "novati_ref": "07b-c"
     },
     {
         "section": "daga",
         "maitre": 2,
-        "jeu": 2,
         "getty_ref": "13r-c",
         "novati_ref": "07b-d"
     },
     {
         "section": "daga",
         "maitre": 2,
-        "jeu": 3,
         "getty_ref": "13r-d",
         "novati_ref": "07b-e"
     },
     {
         "section": "daga",
         "maitre": 2,
-        "jeu": 4,
         "getty_ref": "13v-a",
         "novati_ref": "07b-f"
     },
     {
         "section": "daga",
         "maitre": 3,
-        "jeu": 1,
         "novati_ref": "08b-a"
     },
     {
         "section": "daga",
         "maitre": 3,
-        "jeu": 2,
         "novati_ref": "08b-b"
     },
     {
         "section": "daga",
         "maitre": 3,
-        "jeu": 3,
         "getty_ref": "13v-b",
         "novati_ref": "08b-c"
     },
     {
         "section": "daga",
         "maitre": 3,
-        "jeu": 4,
         "getty_ref": "13v-c",
         "novati_ref": "08b-d"
     },
     {
         "section": "daga",
         "maitre": 3,
-        "jeu": 5,
         "getty_ref": "13v-d",
         "novati_ref": "08b-e"
     },
     {
         "section": "daga",
         "maitre": 3,
-        "jeu": 6,
         "novati_ref": "08b-f"
     },
     {
         "section": "daga",
         "maitre": 3,
-        "jeu": 7,
         "getty_ref": "14r-a",
         "novati_ref": "09a-a"
     },
     {
         "section": "daga",
         "maitre": 3,
-        "jeu": 8,
         "getty_ref": "14r-b",
         "novati_ref": "09a-b"
     },
     {
         "section": "daga",
         "maitre": 3,
-        "jeu": 9,
         "novati_ref": "09a-c"
     },
     {
         "section": "daga",
         "maitre": 3,
-        "jeu": 10,
         "getty_ref": "14r-c",
         "novati_ref": "09a-d"
     },
     {
         "section": "daga",
         "maitre": 3,
-        "jeu": 11,
         "getty_ref": "14r-d",
         "novati_ref": "09a-e"
     },
     {
         "section": "daga",
         "maitre": 4,
-        "jeu": 1,
         "getty_ref": "14v-a",
         "novati_ref": "09b-a"
     },
     {
         "section": "daga",
         "maitre": 4,
-        "jeu": 2,
         "novati_ref": "09b-b"
     },
     {
         "section": "daga",
         "maitre": 4,
-        "jeu": 3,
         "getty_ref": "14v-b",
         "novati_ref": "09b-c"
     },
     {
         "section": "daga",
         "maitre": 4,
-        "jeu": 4,
         "getty_ref": "14v-c",
         "novati_ref": "09b-d"
     },
     {
         "section": "daga",
         "maitre": 4,
-        "jeu": 5,
         "novati_ref": "09b-e"
     },
     {
         "section": "daga",
         "maitre": 4,
-        "jeu": 6,
         "getty_ref": "14v-d",
         "novati_ref": "09b-f"
     },
     {
         "section": "daga",
         "maitre": 4,
-        "jeu": 7,
         "getty_ref": "38r-a",
         "novati_ref": "10a-a"
     },
     {
         "section": "daga",
         "maitre": 4,
-        "jeu": 8,
         "getty_ref": "38r-b",
         "novati_ref": "10a-b"
     },
     {
         "section": "daga",
         "maitre": 4,
-        "jeu": 9,
         "novati_ref": "10a-d"
     },
     {
         "section": "daga",
         "maitre": 4,
-        "jeu": 10,
         "getty_ref": "38r-c",
         "novati_ref": "10a-c"
     },
     {
         "section": "daga",
         "maitre": 5,
-        "jeu": 1,
         "getty_ref": "38r-d",
         "novati_ref": "10a-e"
     },
     {
         "section": "daga",
         "maitre": 5,
-        "jeu": 2,
         "getty_ref": "38v-a",
         "novati_ref": "10a-f"
     },
     {
         "section": "daga",
         "maitre": 5,
-        "jeu": 3,
         "getty_ref": "38v-b",
         "novati_ref": "10b-a"
     },
     {
         "section": "daga",
         "maitre": 5,
-        "jeu": 4,
         "getty_ref": "38v-c",
         "novati_ref": "10b-c"
     },
     {
         "section": "daga",
         "maitre": 5,
-        "jeu": 5,
         "getty_ref": "38v-d",
         "novati_ref": "10b-b"
     },
     {
         "section": "daga",
         "maitre": 5,
-        "jeu": 6,
         "getty_ref": "15r-a",
         "novati_ref": "10b-d"
     },
     {
         "section": "daga",
         "maitre": 5,
-        "jeu": 7,
         "getty_ref": "15r-b",
         "novati_ref": "10b-e"
     },
     {
         "section": "daga",
         "maitre": 5,
-        "jeu": 8,
         "getty_ref": "15r-c",
         "novati_ref": "10b-f"
     },
     {
         "section": "daga",
         "maitre": 5,
-        "jeu": 9,
         "getty_ref": "15r-d",
         "novati_ref": "11a-a"
     },
     {
         "section": "daga",
         "maitre": 5,
-        "jeu": 10,
         "getty_ref": "15v-a",
         "novati_ref": "11a-b"
     },
     {
         "section": "daga",
         "maitre": 5,
-        "jeu": 11,
         "getty_ref": "15v-b",
         "novati_ref": "11a-c"
     },
     {
         "section": "daga",
         "maitre": 5,
-        "jeu": 12,
         "getty_ref": "15v-c",
         "novati_ref": "11a-d"
     },
     {
         "section": "daga",
         "maitre": 5,
-        "jeu": 13,
         "getty_ref": "15v-d"
     },
     {
         "section": "daga",
         "maitre": 6,
-        "jeu": 1,
         "getty_ref": "16r-a",
         "novati_ref": "11a-e"
     },
     {
         "section": "daga",
         "maitre": 6,
-        "jeu": 2,
         "getty_ref": "16r-b"
     },
     {
         "section": "daga",
         "maitre": 6,
-        "jeu": 3,
         "getty_ref": "16r-c",
         "novati_ref": "11b-a"
     },
     {
         "section": "daga",
         "maitre": 6,
-        "jeu": 4,
         "getty_ref": "16r-d",
         "novati_ref": "11b-b"
     },
     {
         "section": "daga",
         "maitre": 6,
-        "jeu": 5,
         "getty_ref": "16v-a",
         "novati_ref": "11a-f"
     },
     {
         "section": "daga",
         "maitre": 6,
-        "jeu": 6,
         "getty_ref": "16v-b"
     },
     {
         "section": "daga",
         "maitre": 6,
-        "jeu": 7,
         "getty_ref": "16v-c",
         "novati_ref": "11b-d"
     },
     {
         "section": "daga",
         "maitre": 6,
-        "jeu": 8,
         "getty_ref": "16v-d",
         "novati_ref": "12a-a"
     },
     {
         "section": "daga",
         "maitre": 6,
-        "jeu": 9,
         "novati_ref": "11b-c"
     },
     {
         "section": "daga",
         "maitre": 7,
-        "jeu": 1,
         "getty_ref": "17r-a",
         "novati_ref": "11b-e"
     },
     {
         "section": "daga",
         "maitre": 7,
-        "jeu": 2,
         "getty_ref": "17r-b",
         "novati_ref": "11b-f"
     },
     {
         "section": "daga",
         "maitre": 8,
-        "jeu": 1,
         "getty_ref": "17r-c"
     },
     {
         "section": "daga",
         "maitre": 8,
-        "jeu": 2,
         "getty_ref": "17r-d",
         "novati_ref": "12a-b"
     },
     {
         "section": "daga",
         "maitre": 8,
-        "jeu": 3,
         "novati_ref": "12a-c"
     },
     {
         "section": "daga",
         "maitre": 8,
-        "jeu": 4,
         "getty_ref": "17v-a"
     },
     {
         "section": "daga",
         "maitre": 8,
-        "jeu": 5,
         "getty_ref": "17v-b"
     },
     {
         "section": "daga",
         "maitre": 9,
-        "jeu": 1,
         "getty_ref": "17v-c",
         "novati_ref": "12a-d"
     },
     {
         "section": "daga",
         "maitre": 9,
-        "jeu": 2,
         "getty_ref": "17v-d",
         "novati_ref": "12a-e"
     },
     {
         "section": "daga",
         "maitre": 9,
-        "jeu": 3,
         "getty_ref": "18r-a",
         "novati_ref": "12b-c"
     },
     {
         "section": "daga",
         "maitre": 9,
-        "jeu": 4,
         "getty_ref": "18r-b",
         "novati_ref": "12b-b"
     },
     {
         "section": "daga",
         "maitre": 9,
-        "jeu": 5,
         "getty_ref": "18r-c",
         "novati_ref": "12b-a"
     },
     {
         "section": "daga",
         "maitre": 9,
-        "jeu": 6,
         "getty_ref": "18r-d",
         "novati_ref": "12a-f"
     },
     {
         "section": "daga",
         "maitre": 9,
-        "jeu": 7,
         "getty_ref": "18v-a",
         "novati_ref": "12b-d"
     },
     {
         "section": "daga",
         "maitre": 9,
-        "jeu": 8,
         "getty_ref": "18v-b"
     },
     {
         "section": "daga",
         "maitre": 9,
-        "jeu": 9,
         "getty_ref": "18v-c"
     },
     {
         "section": "daga",
         "maitre": 9,
-        "jeu": 10,
         "getty_ref": "18v-d"
     },
     {
         "section": "daga",
         "maitre": 9,
-        "jeu": 11,
-        "getty_ref": "18v-d"
+        "getty_ref": "18v-d.1"
     },
     {
         "section": "spada_daga",
@@ -770,7 +650,7 @@
     {
         "section": "spada1h",
         "maitre": 1,
-        "getty_ref": "20r-d",
+        "getty_ref": "20r-d.1",
         "novati_ref": "13a-d"
     },
     {
@@ -847,525 +727,447 @@
     {
         "section": "spada2",
         "maitre": "guardie",
-        "jeu": "0",
         "getty_ref": "22r-a"
     },
     {
         "section": "spada2",
         "maitre": "guardie",
-        "jeu": "1",
         "getty_ref": "22r-b"
     },
     {
         "section": "spada2",
         "maitre": "guardie",
-        "jeu": "2",
         "getty_ref": "22r-c",
         "novati_ref": "17b-a"
     },
     {
         "section": "spada2",
         "maitre": "guardie",
-        "jeu": "3",
         "getty_ref": "22r-d",
         "novati_ref": "17b-b"
     },
     {
         "section": "spada2",
         "maitre": "guardie",
-        "jeu": "4",
         "getty_ref": "22v-a",
         "novati_ref": "17b-c"
     },
     {
         "section": "spada2",
         "maitre": "guardie",
-        "jeu": "5",
         "getty_ref": "22v-b",
         "novati_ref": "17b-d"
     },
     {
         "section": "spada2",
         "maitre": "guardie",
-        "jeu": "6",
         "getty_ref": "22v-c",
         "novati_ref": "17b-e"
     },
     {
         "section": "spada2",
         "maitre": "guardie",
-        "jeu": "7",
         "getty_ref": "22v-d",
         "novati_ref": "17b-f"
     },
     {
         "section": "spada2",
         "maitre": "copli",
-        "jeu": "1",
         "getty_ref": "23r-a",
         "novati_ref": "12b-e"
     },
     {
         "section": "spada2",
         "maitre": "copli",
-        "jeu": "2",
         "getty_ref": "23r-b",
         "novati_ref": "12b-f"
     },
     {
         "section": "spada2",
         "maitre": "copli",
-        "jeu": "3",
         "getty_ref": "23r-c",
         "novati_ref": "13a-a"
     },
     {
         "section": "spada2",
         "maitre": "copli",
-        "jeu": "4",
         "getty_ref": "23r-d",
         "novati_ref": "13a-b"
     },
     {
         "section": "spada2",
         "maitre": "poste",
-        "jeu": "1",
         "getty_ref": "23v-a",
         "novati_ref": "18a-a"
     },
     {
         "section": "spada2",
         "maitre": "poste",
-        "jeu": "2",
         "getty_ref": "23v-b",
         "novati_ref": "18a-b"
     },
     {
         "section": "spada2",
         "maitre": "poste",
-        "jeu": "3",
         "getty_ref": "23v-c",
         "novati_ref": "18a-c"
     },
     {
         "section": "spada2",
         "maitre": "poste",
-        "jeu": "4",
         "getty_ref": "24r-b",
         "novati_ref": "18a-d"
     },
     {
         "section": "spada2",
         "maitre": "poste",
-        "jeu": "5",
         "getty_ref": "24r-a",
         "novati_ref": "18b-a"
     },
     {
         "section": "spada2",
         "maitre": "poste",
-        "jeu": "6",
         "getty_ref": "24v-c",
         "novati_ref": "18b-b"
     },
     {
         "section": "spada2",
         "maitre": "poste",
-        "jeu": "7",
         "novati_ref": "18b-c"
     },
     {
         "section": "spada2",
         "maitre": "poste",
-        "jeu": "8",
         "getty_ref": "24r-d",
         "novati_ref": "18b-d"
     },
     {
         "section": "spada2",
         "maitre": "poste",
-        "jeu": "9",
         "getty_ref": "24r-c",
         "novati_ref": "19a-a"
     },
     {
         "section": "spada2",
         "maitre": "poste",
-        "jeu": "10",
         "getty_ref": "23v-d",
         "novati_ref": "19a-b"
     },
     {
         "section": "spada2",
         "maitre": "poste",
-        "jeu": "11",
         "getty_ref": "24v-a",
         "novati_ref": "19a-c"
     },
     {
         "section": "spada2",
         "maitre": "poste",
-        "jeu": "12",
         "getty_ref": "24v-b",
         "novati_ref": "19a-d"
     },
     {
         "section": "spada2",
         "maitre": "poste",
-        "jeu": "13",
         "getty_ref": "24v-d"
     },
     {
         "section": "spada2",
         "maitre": "poste",
-        "jeu": "14",
         "getty_ref": "25r-t"
     },
     {
         "section": "spada2",
         "maitre": "largo",
-        "jeu": "1",
         "getty_ref": "25r-c",
         "novati_ref": "19b-a"
     },
     {
         "section": "spada2",
         "maitre": "largo",
-        "jeu": "2",
         "getty_ref": "25r-d",
         "novati_ref": "19b-b"
     },
     {
         "section": "spada2",
         "maitre": "mezzo",
-        "jeu": "1",
         "getty_ref": "25v-a",
         "novati_ref": "19b-c"
     },
     {
         "section": "spada2",
         "maitre": "mezzo",
-        "jeu": "2",
         "getty_ref": "25v-b",
         "novati_ref": "19b-d"
     },
     {
         "section": "spada2",
         "maitre": "mezzo",
-        "jeu": "3",
         "getty_ref": "25v-c",
         "novati_ref": "20a-a"
     },
     {
         "section": "spada2",
         "maitre": "mezzo",
-        "jeu": "4",
         "getty_ref": "25v-d",
         "novati_ref": "20a-b"
     },
     {
         "section": "spada2",
         "maitre": "mezzo",
-        "jeu": "5",
         "getty_ref": "26r-a",
         "novati_ref": "20a-c"
     },
     {
         "section": "spada2",
         "maitre": "mezzo",
-        "jeu": "6",
         "getty_ref": "26r-b",
         "novati_ref": "20a-d"
     },
     {
         "section": "spada2",
         "maitre": "mezzo",
-        "jeu": "7",
         "getty_ref": "26r-c",
         "novati_ref": "20b-a"
     },
     {
         "section": "spada2",
         "maitre": "mezzo",
-        "jeu": "8",
         "getty_ref": "26r-d",
         "novati_ref": "20b-b"
     },
     {
         "section": "spada2",
         "maitre": "mezzo",
-        "jeu": "9",
         "getty_ref": "26v-a",
         "novati_ref": "20b-c"
     },
     {
         "section": "spada2",
         "maitre": "mezzo",
-        "jeu": "10",
         "getty_ref": "26v-b",
         "novati_ref": "20b-d"
     },
     {
         "section": "spada2",
         "maitre": "mezzo",
-        "jeu": "11",
         "getty_ref": "26v-c",
         "novati_ref": "21a-b"
     },
     {
         "section": "spada2",
         "maitre": "mezzo",
-        "jeu": "12",
         "getty_ref": "26v-d",
         "novati_ref": "21a-a"
     },
     {
         "section": "spada2",
         "maitre": "mezzo",
-        "jeu": "13",
         "getty_ref": "27r-a",
         "novati_ref": "21a-c"
     },
     {
         "section": "spada2",
         "maitre": "mezzo",
-        "jeu": "14",
         "getty_ref": "27r-b",
         "novati_ref": "21a-d"
     },
     {
         "section": "spada2",
         "maitre": "mezzo",
-        "jeu": "15",
         "getty_ref": "27r-c",
         "novati_ref": "21b-a"
     },
     {
         "section": "spada2",
         "maitre": "mezzo",
-        "jeu": "16",
         "getty_ref": "27r-d",
         "novati_ref": "21b-b"
     },
     {
         "section": "spada2",
         "maitre": "mezzo",
-        "jeu": "17",
         "getty_ref": "27v-a",
         "novati_ref": "21b-c"
     },
     {
         "section": "spada2",
         "maitre": "mezzo",
-        "jeu": "18",
         "getty_ref": "27v-b",
         "novati_ref": "21b-d"
     },
     {
         "section": "spada2",
         "maitre": "mezzo",
-        "jeu": "19",
         "getty_ref": "27v-c"
     },
     {
         "section": "spada2",
         "maitre": "stretto",
-        "jeu": "0",
         "getty_ref": "27v-d"
     },
     {
         "section": "spada2",
         "maitre": "stretto",
-        "jeu": "1",
         "getty_ref": "28r-a",
         "novati_ref": "22a-a"
     },
     {
         "section": "spada2",
         "maitre": "stretto",
-        "jeu": "2",
         "getty_ref": "28r-b",
         "novati_ref": "22a-b"
     },
     {
         "section": "spada2",
         "maitre": "stretto",
-        "jeu": "3",
         "getty_ref": "28r-c",
         "novati_ref": "22a-c"
     },
     {
         "section": "spada2",
         "maitre": "stretto",
-        "jeu": "4",
         "getty_ref": "28r-d",
         "novati_ref": "22a-d"
     },
     {
         "section": "spada2",
         "maitre": "stretto",
-        "jeu": "5",
         "getty_ref": "28v-a",
         "novati_ref": "22b-a"
     },
     {
         "section": "spada2",
         "maitre": "stretto",
-        "jeu": "6",
         "novati_ref": "22b-c"
     },
     {
         "section": "spada2",
         "maitre": "stretto",
-        "jeu": "7",
         "getty_ref": "28v-b"
     },
     {
         "section": "spada2",
         "maitre": "stretto",
-        "jeu": "8",
         "getty_ref": "28v-c",
         "novati_ref": "23a-b"
     },
     {
         "section": "spada2",
         "maitre": "stretto",
-        "jeu": "9",
         "getty_ref": "28v-d"
     },
     {
         "section": "spada2",
         "maitre": "stretto",
-        "jeu": "10",
         "getty_ref": "29r-a",
         "novati_ref": "23a-a"
     },
     {
         "section": "spada2",
         "maitre": "stretto",
-        "jeu": "11",
         "getty_ref": "29r-b"
     },
     {
         "section": "spada2",
         "maitre": "stretto",
-        "jeu": "12",
         "getty_ref": "29r-c"
     },
     {
         "section": "spada2",
         "maitre": "stretto",
-        "jeu": "13",
         "getty_ref": "29r-d"
     },
     {
         "section": "spada2",
         "maitre": "stretto",
-        "jeu": "14",
         "getty_ref": "29v-a",
         "novati_ref": "22b-b"
     },
     {
         "section": "spada2",
         "maitre": "stretto",
-        "jeu": "15",
         "getty_ref": "29v-b",
         "novati_ref": "22b-d"
     },
     {
         "section": "spada2",
         "maitre": "stretto",
-        "jeu": "16",
         "getty_ref": "29v-c",
         "novati_ref": "23b-d"
     },
     {
         "section": "spada2",
         "maitre": "stretto",
-        "jeu": "17",
         "getty_ref": "29v-d"
     },
     {
         "section": "spada2",
         "maitre": "stretto",
-        "jeu": "18",
         "novati_ref": "23b-a"
     },
     {
         "section": "spada2",
         "maitre": "stretto",
-        "jeu": "19",
         "novati_ref": "23b-b"
     },
     {
         "section": "spada2",
         "maitre": "stretto",
-        "jeu": "20",
         "novati_ref": "23b-c"
     },
     {
         "section": "spada2",
         "maitre": "stretto",
-        "jeu": "21",
         "getty_ref": "30r-a",
         "novati_ref": "23a-c"
     },
     {
         "section": "spada2",
         "maitre": "stretto",
-        "jeu": "22",
         "getty_ref": "30r-b"
     },
     {
         "section": "spada2",
         "maitre": "stretto",
-        "jeu": "23",
         "novati_ref": "23a-d"
     },
     {
         "section": "spada2",
         "maitre": "stretto",
-        "jeu": "24",
         "novati_ref": "24a-a"
     },
     {
         "section": "spada2",
         "maitre": "stretto",
-        "jeu": "25",
         "getty_ref": "30r-c",
         "novati_ref": "24a-b"
     },
     {
         "section": "spada2",
         "maitre": "stretto",
-        "jeu": "26",
         "getty_ref": "30r-d"
     },
     {
         "section": "spada2",
         "maitre": "stretto",
-        "jeu": "27",
         "getty_ref": "30v-a",
         "novati_ref": "24a-c"
     },
     {
         "section": "spada2",
         "maitre": "stretto",
-        "jeu": "28",
         "getty_ref": "30v-b",
         "novati_ref": "24a-d"
     },
     {
         "section": "spada2",
         "maitre": "stretto",
-        "jeu": "29",
         "getty_ref": "30v-c",
         "novati_ref": "24b-a"
     },
     {
         "section": "spada2",
         "maitre": "segno",
-        "jeu": "segno",
         "getty_ref": "32r",
         "novati_ref": "17a"
     }
