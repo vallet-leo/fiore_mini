@@ -340,7 +340,9 @@ if (localStorage.getItem('fioremini_theme')=="light") {
     console.log("dark ?")
     console.log(localStorage.getItem('fioremini_theme'))
 }
-
+if (state.pieces[0].section == "intros"){
+    handleReadIntro();
+}
 
 //state.idx = state.pieces.length - 1;
 slider.max = state.pieces.length - 1;
