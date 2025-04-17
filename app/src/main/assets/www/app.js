@@ -7,7 +7,7 @@ let state = JSON.parse(localStorage.getItem('fioremini_state')) || {
     touchStart: null,
     mode: 'all',
     pieces: jeux,
-    idx: 207,
+    idx: 205,
     lang: 'fr',
     preferredSource: 'getty',
     source: 'getty'
@@ -67,8 +67,16 @@ function compareCorrectMovedPages(x, y, version) {
 
 // Event Handlers
 
+function toggleDarkMode() {
+    console.log("Toggle mode")
+    const currentTheme = document.documentElement.getAttribute("data-theme");
+    const newTheme = currentTheme === "dark" ? "light" : "dark";
+    document.documentElement.setAttribute("data-theme", newTheme);
+    localStorage.setItem('fioremini_theme', newTheme);
+}
+
 function closeAllDropdowns() {
-    closeAllDropdownsExcept("")								 
+    closeAllDropdownsExcept("")
     slider.classList.add('show');
 }
 
@@ -215,6 +223,7 @@ function updateUI() {
         state.preferredSource : 
         (state.preferredSource === 'novati' ? 'getty' : 'novati');
     const piece_ref = currentPiece[source.toLowerCase() + '_ref'];
+    const img_ref = piece_ref.split('.')[0];
 
     state.source = source;
 
@@ -225,7 +234,7 @@ function updateUI() {
     jeuSelector.textContent = "🔸 " + (state.idx - master_index +1);
 
     // Update image and text
-    galleryImage.src = `./img/${source}/${source}_${piece_ref}.jpg`;
+    galleryImage.src = `./img/${source}/${source}_${img_ref}.jpg`;
     zhogoText.innerHTML = langs[state.lang][source+"."+piece_ref];
     zhogoNote.textContent =  localStorage.getItem(`notes_${source}_${piece_ref}`) || "";
     localStorage.setItem('fioremini_state', JSON.stringify(state));
@@ -304,6 +313,7 @@ document.getElementById('close-sidebar').addEventListener('click', function() {s
 document.getElementById('order-all').addEventListener('click', function() {handleSortClick("all")});
 document.getElementById('order-getty').addEventListener('click', function() {handleSortClick("getty_ref")});
 document.getElementById('order-novati').addEventListener('click', function() {handleSortClick("novati_ref")});
+document.getElementById('switch-theme').addEventListener('click', function() {toggleDarkMode()});
 zhogoNote.addEventListener('blur', (e) => {
     const currentPiece = state.pieces[state.idx];
     const id_img = state.source.toLowerCase() + '_ref';
@@ -321,6 +331,16 @@ document.addEventListener('click', (e) => {
 });
 
 // Initial UI setup
+
+if (localStorage.getItem('fioremini_theme')=="light") {
+    console.log("light")
+    document.getElementById("checkbox").checked = true;
+    toggleDarkMode();
+} else {
+    console.log("dark ?")
+    console.log(localStorage.getItem('fioremini_theme'))
+}
+
 
 //state.idx = state.pieces.length - 1;
 slider.max = state.pieces.length - 1;
