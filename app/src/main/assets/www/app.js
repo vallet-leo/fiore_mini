@@ -7,7 +7,7 @@ let state = JSON.parse(localStorage.getItem('fioremini_state')) || {
     touchStart: null,
     mode: 'all',
     pieces: jeux,
-    idx: 205,
+    idx: jeux.length - 1,
     lang: 'fr',
     preferredSource: 'getty',
     source: 'getty'
@@ -68,7 +68,6 @@ function compareCorrectMovedPages(x, y, version) {
 // Event Handlers
 
 function toggleDarkMode() {
-    console.log("Toggle mode")
     const currentTheme = document.documentElement.getAttribute("data-theme");
     const newTheme = currentTheme === "dark" ? "light" : "dark";
     document.documentElement.setAttribute("data-theme", newTheme);
@@ -217,6 +216,9 @@ function handleSortClick(version){
 
 // UI Updates
 function updateUI() {
+    if (state.idx > state.pieces.length -1) {
+        state.idx = state.pieces.length -1;
+    }
     const currentPiece = state.pieces[state.idx];
     const master_index = state.pieces.findIndex(piece => (piece.maitre === state.pieces[state.idx].maitre) && (state.pieces[state.idx].section == piece.section))
     const source = (currentPiece.hasOwnProperty(state.preferredSource + '_ref') && (currentPiece[state.preferredSource + '_ref'] !== '')) ? 
@@ -333,12 +335,8 @@ document.addEventListener('click', (e) => {
 // Initial UI setup
 
 if (localStorage.getItem('fioremini_theme')=="light") {
-    console.log("light")
     document.getElementById("checkbox").checked = true;
     toggleDarkMode();
-} else {
-    console.log("dark ?")
-    console.log(localStorage.getItem('fioremini_theme'))
 }
 if (state.pieces[0].section == "intros"){
     handleReadIntro();
