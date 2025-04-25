@@ -15,7 +15,7 @@ let state = JSON.parse(localStorage.getItem('fioremini_state')) || {
 
 // Constants
 const sections = ["intros", "daga","spada_daga","spada1h","spada2"];
-const manuscriptDict = { "getty": "🄶", "novati": "🄽", "paris": "🇵", "morgan": "🇲" };
+const manuscriptDict = { "getty": "🄶", "novati": "🄽", "paris": "🄿", "morgan": "🄼" };
 
 // DOM Elements
 const versionSelector = document.getElementById('version-selector');
@@ -52,17 +52,49 @@ function getUniqueJeux() {
 }
 
 function compareCorrectMovedPages(x, y, version) {
-    var a = x[version];
-    var b = y[version];
+    var a = correctMovedPages(x, version);
+    var b = correctMovedPages(y, version);
+
+    return a.localeCompare(b);
+}
+
+function correctMovedPages(x, version) {
+    a = x[version]
     if (version.startsWith("getty")) {
         if (a.startsWith("38")) a = a.replace("38", "14x");
-        if (b.startsWith("38")) b = b.replace("38", "14x");
     }
     if (version.startsWith("novati")) {
         if (a.startsWith("08a")) a = a.replace("08a", "06x");
-        if (b.startsWith("08a")) b = b.replace("08a", "06x");
     }
-    return a.localeCompare(b);
+    if (version.startsWith("paris")) {
+        if (a.startsWith("16")) a = a.replace("16", "15wy");
+        if (a.startsWith("17")) a = a.replace("17", "15wz");
+        if (a.startsWith("18")) a = a.replace("18", "15wx");
+        if (a.startsWith("19")) a = a.replace("19", "15ww");
+        if (a.startsWith("20")) a = a.replace("20", "15xw");
+        if (a.startsWith("21")) a = a.replace("21", "15xx");
+        if (a.startsWith("22")) a = a.replace("22", "15yx");
+        if (a.startsWith("23")) a = a.replace("23", "15yw");
+        if (a.startsWith("24")) a = a.replace("24", "15xy");
+        if (a.startsWith("25")) a = a.replace("25", "15xz");
+    }
+    if (version.startsWith("morgan")) {
+        if (a.startsWith("16r-t")) a = a.replace("16r-t", "14x");
+        if (a.startsWith("16")) a = a.replace("16", "14x");
+        if (a.startsWith("18")) a = a.replace("18", "15x");
+    }
+    return a;
+}
+
+function selectSource() {
+    if (state.pieces[state.idx].hasOwnProperty(state.preferredSource + '_ref')){
+        return state.preferredSource;
+    }
+    const hasGettyVer =  (state.pieces[state.idx].hasOwnProperty('getty_ref')) && (state.pieces[state.idx].getty_ref !== '');
+    const hasNovatiVer = (state.pieces[state.idx].hasOwnProperty('novati_ref')) && (state.pieces[state.idx].novati_ref !== '');
+    const hasMorganVer = (state.pieces[state.idx].hasOwnProperty('morgan_ref')) && (state.pieces[state.idx].morgan_ref !== '');
+
+    return hasGettyVer ? 'getty' : (hasNovatiVer? 'novati' : (hasMorganVer? 'morgan' : 'paris'));
 }
 
 // Event Handlers
@@ -109,7 +141,7 @@ function handleSectionSelect(section) {
         return;
     }
     if (state.pieces[0].section == "intros"){
-        handleSortClick(state.mode);
+        handleSortClick(state.mode + "_ref");
     }
     const index = state.pieces.findIndex(piece => piece.section === section);
     if (index !== -1) {
@@ -212,7 +244,7 @@ function handleSortClick(version){
     slider.max = state.pieces.length - 1;
     sidebar.classList.remove('open');
     updateUI();
-  }
+}
 
 // UI Updates
 function updateUI() {
@@ -221,9 +253,7 @@ function updateUI() {
     }
     const currentPiece = state.pieces[state.idx];
     const master_index = state.pieces.findIndex(piece => (piece.maitre === state.pieces[state.idx].maitre) && (state.pieces[state.idx].section == piece.section))
-    const source = (currentPiece.hasOwnProperty(state.preferredSource + '_ref') && (currentPiece[state.preferredSource + '_ref'] !== '')) ? 
-        state.preferredSource : 
-        (state.preferredSource === 'novati' ? 'getty' : 'novati');
+    const source = selectSource();
     const piece_ref = currentPiece[source.toLowerCase() + '_ref'];
     const img_ref = piece_ref.split('.')[0];
 
@@ -248,6 +278,8 @@ function updateDropdowns() {
     versionDropdown.innerHTML = '';
     const hasGettyVer =  (state.pieces[state.idx].hasOwnProperty('getty_ref')) && (state.pieces[state.idx].getty_ref !== '');
     const hasNovatiVer = (state.pieces[state.idx].hasOwnProperty('novati_ref')) && (state.pieces[state.idx].novati_ref !== '');
+    const hasMorganVer = (state.pieces[state.idx].hasOwnProperty('morgan_ref')) && (state.pieces[state.idx].morgan_ref !== '');
+    const hasParisVer = (state.pieces[state.idx].hasOwnProperty('paris_ref')) && (state.pieces[state.idx].paris_ref !== '');
 
     ['fr', 'en', 'o'].forEach(lang => {
         if (hasGettyVer) {
@@ -268,6 +300,32 @@ function updateDropdowns() {
             li.textContent = `Novati | ${lang}`;
             li.onclick = () => handleVersionSelect('novati', lang);
             if ((lang === state.lang) && (state.source === 'novati')) li.classList.add('selected');
+            versionDropdown.appendChild(li);
+        }
+    });
+    if ((hasNovatiVer || hasGettyVer) && hasMorganVer) {
+        const hr = document.createElement('hr');
+        versionDropdown.appendChild(hr);
+    }
+    ['fr', 'en', 'o'].forEach(lang => {
+        if (hasMorganVer) {
+            const li = document.createElement('li');
+            li.textContent = `Morgan | ${lang}`;
+            li.onclick = () => handleVersionSelect('morgan', lang);
+            if ((lang === state.lang) && (state.source === 'morgan')) li.classList.add('selected');
+            versionDropdown.appendChild(li);
+        }
+    });
+    if ((hasNovatiVer || hasGettyVer || hasMorganVer) && hasParisVer) {
+        const hr = document.createElement('hr');
+        versionDropdown.appendChild(hr);
+    }
+    ['fr', 'en', 'o'].forEach(lang => {
+        if (hasParisVer) {
+            const li = document.createElement('li');
+            li.textContent = `Paris | ${lang}`;
+            li.onclick = () => handleVersionSelect('paris', lang);
+            if ((lang === state.lang) && (state.source === 'paris')) li.classList.add('selected');
             versionDropdown.appendChild(li);
         }
     });
@@ -315,6 +373,8 @@ document.getElementById('close-sidebar').addEventListener('click', function() {s
 document.getElementById('order-all').addEventListener('click', function() {handleSortClick("all")});
 document.getElementById('order-getty').addEventListener('click', function() {handleSortClick("getty_ref")});
 document.getElementById('order-novati').addEventListener('click', function() {handleSortClick("novati_ref")});
+document.getElementById('order-morgan').addEventListener('click', function() {handleSortClick("morgan_ref")});
+document.getElementById('order-paris').addEventListener('click', function() {handleSortClick("paris_ref")});
 document.getElementById('switch-theme').addEventListener('click', function() {toggleDarkMode()});
 zhogoNote.addEventListener('blur', (e) => {
     const currentPiece = state.pieces[state.idx];
