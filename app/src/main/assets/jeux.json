@@ -32,77 +32,87 @@
     {
         "section": "daga",
         "maitre": 0,
+        "getty_ref": "09v-f"
+    },
+    {
+        "section": "daga",
+        "maitre": 0,
         "getty_ref": "09v-a"
     },
     {
         "section": "daga",
         "maitre": 0,
         "getty_ref": "09v-b"
-    },    
-	{
-        "section": "daga",
-        "maitre": 0,
-        "getty_ref": "09v-f"
     },
     {
         "section": "daga",
         "maitre": 0,
         "getty_ref": "10r-a",
-        "novati_ref": "06a-a"
+        "novati_ref": "06a-a",
+        "paris_ref": "21r-a"
     },
     {
         "section": "daga",
         "maitre": 0,
         "getty_ref": "10r-b",
-        "novati_ref": "06a-b"
+        "novati_ref": "06a-b",
+        "paris_ref": "21r-b"
     },
     {
         "section": "daga",
         "maitre": 0,
         "getty_ref": "10r-c",
-        "novati_ref": "06a-c"
+        "novati_ref": "06a-c",
+        "paris_ref": "21r-c"
     },
     {
         "section": "daga",
         "maitre": 0,
         "getty_ref": "10r-d",
-        "novati_ref": "06a-d"
+        "novati_ref": "06a-d",
+        "paris_ref": "21r-d"
     },
     {
         "section": "daga",
         "maitre": 1,
         "getty_ref": "10v-a",
-        "novati_ref": "06a-e"
+        "novati_ref": "06a-e",
+        "paris_ref": "21v-a"
     },
     {
         "section": "daga",
         "maitre": 1,
         "getty_ref": "10v-b",
-        "novati_ref": "06a-f"
+        "novati_ref": "06a-f",
+        "paris_ref": "21v-d"
     },
     {
         "section": "daga",
         "maitre": 1,
         "getty_ref": "10v-c",
-        "novati_ref": "06b-a"
+        "novati_ref": "06b-a",
+        "paris_ref": "24r-a"
     },
     {
         "section": "daga",
         "maitre": 1,
         "getty_ref": "10v-d",
-        "novati_ref": "06b-b"
+        "novati_ref": "06b-b",
+        "paris_ref": "24r-d"
     },
     {
         "section": "daga",
         "maitre": 1,
         "getty_ref": "11r-a",
-        "novati_ref": "06b-c"
+        "novati_ref": "06b-c",
+        "paris_ref": "24v-a"
     },
     {
         "section": "daga",
         "maitre": 1,
         "getty_ref": "11r-b",
-        "novati_ref": "06b-d"
+        "novati_ref": "06b-d",
+        "paris_ref": "24v-d"
     },
     {
         "section": "daga",
@@ -118,7 +128,8 @@
         "section": "daga",
         "maitre": 1,
         "getty_ref": "11v-a",
-        "novati_ref": "08a-d"
+        "novati_ref": "08a-d",
+        "paris_ref": "44r-b"
     },
     {
         "section": "daga",
@@ -133,49 +144,57 @@
     {
         "section": "daga",
         "maitre": 1,
-        "novati_ref": "08a-a"
+        "novati_ref": "08a-a",
+        "paris_ref": "43v-b"
     },
     {
         "section": "daga",
         "maitre": 1,
         "getty_ref": "11v-b",
-        "novati_ref": "08a-b"
+        "novati_ref": "08a-b",
+        "paris_ref": "43r-d"
     },
     {
         "section": "daga",
         "maitre": 1,
         "getty_ref": "11v-c",
-        "novati_ref": "08a-c"
+        "novati_ref": "08a-c",
+        "paris_ref": "43v-d"
     },
     {
         "section": "daga",
         "maitre": 1,
         "getty_ref": "11v-d",
-        "novati_ref": "06b-e"
+        "novati_ref": "06b-e",
+        "paris_ref": "25r-a"
     },
     {
         "section": "daga",
         "maitre": 1,
         "getty_ref": "12r-a",
-        "novati_ref": "06b-f"
+        "novati_ref": "06b-f",
+        "paris_ref": "25r-d"
     },
     {
         "section": "daga",
         "maitre": 1,
         "getty_ref": "12r-b",
-        "novati_ref": "07a-a"
+        "novati_ref": "07a-a",
+        "paris_ref": "25v-a"
     },
     {
         "section": "daga",
         "maitre": 1,
         "getty_ref": "12r-c",
-        "novati_ref": "07a-b"
+        "novati_ref": "07a-b",
+        "paris_ref": "25v-d"
     },
     {
         "section": "daga",
         "maitre": 1,
         "getty_ref": "12r-d",
-        "novati_ref": "07a-c"
+        "novati_ref": "07a-c",
+        "paris_ref": "23r-a"
     },
     {
         "section": "daga",
@@ -187,7 +206,8 @@
         "section": "daga",
         "maitre": 1,
         "getty_ref": "12v-b",
-        "novati_ref": "07a-e"
+        "novati_ref": "07a-e",
+        "paris_ref": "23r-c"
     },
     {
         "section": "daga",
@@ -199,7 +219,8 @@
         "section": "daga",
         "maitre": 1,
         "getty_ref": "12v-d",
-        "novati_ref": "07b-a"
+        "novati_ref": "07b-a",
+        "paris_ref": "23v-a"
     },
     {
         "section": "daga",
@@ -245,19 +266,22 @@
         "section": "daga",
         "maitre": 3,
         "getty_ref": "13v-b",
-        "novati_ref": "08b-c"
+        "novati_ref": "08b-c",
+        "paris_ref": "22r-c"
     },
     {
         "section": "daga",
         "maitre": 3,
         "getty_ref": "13v-c",
-        "novati_ref": "08b-d"
+        "novati_ref": "08b-d",
+        "paris_ref": "22v-a"
     },
     {
         "section": "daga",
         "maitre": 3,
         "getty_ref": "13v-d",
-        "novati_ref": "08b-e"
+        "novati_ref": "08b-e",
+        "paris_ref": "22v-c"
     },
     {
         "section": "daga",
@@ -268,13 +292,15 @@
         "section": "daga",
         "maitre": 3,
         "getty_ref": "14r-a",
-        "novati_ref": "09a-a"
+        "novati_ref": "09a-a",
+        "paris_ref": "31r-a"
     },
     {
         "section": "daga",
         "maitre": 3,
         "getty_ref": "14r-b",
-        "novati_ref": "09a-b"
+        "novati_ref": "09a-b",
+        "paris_ref": "31r-c"
     },
     {
         "section": "daga",
@@ -285,19 +311,22 @@
         "section": "daga",
         "maitre": 3,
         "getty_ref": "14r-c",
-        "novati_ref": "09a-d"
+        "novati_ref": "09a-d",
+        "paris_ref": "31v-a"
     },
     {
         "section": "daga",
         "maitre": 3,
         "getty_ref": "14r-d",
-        "novati_ref": "09a-e"
+        "novati_ref": "09a-e",
+        "paris_ref": "31v-c"
     },
     {
         "section": "daga",
         "maitre": 4,
         "getty_ref": "14v-a",
-        "novati_ref": "09b-a"
+        "novati_ref": "09b-a",
+        "paris_ref": "32r-a"
     },
     {
         "section": "daga",
@@ -308,13 +337,15 @@
         "section": "daga",
         "maitre": 4,
         "getty_ref": "14v-b",
-        "novati_ref": "09b-c"
+        "novati_ref": "09b-c",
+        "paris_ref": "32r-c"
     },
     {
         "section": "daga",
         "maitre": 4,
         "getty_ref": "14v-c",
-        "novati_ref": "09b-d"
+        "novati_ref": "09b-d",
+        "paris_ref": "32v-a"
     },
     {
         "section": "daga",
@@ -325,19 +356,22 @@
         "section": "daga",
         "maitre": 4,
         "getty_ref": "14v-d",
-        "novati_ref": "09b-f"
+        "novati_ref": "09b-f",
+        "paris_ref": "32v-c"
     },
     {
         "section": "daga",
         "maitre": 4,
         "getty_ref": "38r-a",
-        "novati_ref": "10a-a"
+        "novati_ref": "10a-a",
+        "paris_ref": "33r-a"
     },
     {
         "section": "daga",
         "maitre": 4,
         "getty_ref": "38r-b",
-        "novati_ref": "10a-b"
+        "novati_ref": "10a-b",
+        "paris_ref": "33r-c"
     },
     {
         "section": "daga",
@@ -348,61 +382,71 @@
         "section": "daga",
         "maitre": 4,
         "getty_ref": "38r-c",
-        "novati_ref": "10a-c"
+        "novati_ref": "10a-c",
+        "paris_ref": "33v-b"
     },
     {
         "section": "daga",
         "maitre": 5,
         "getty_ref": "38r-d",
-        "novati_ref": "10a-e"
+        "novati_ref": "10a-e",
+        "paris_ref": "33v-d"
     },
     {
         "section": "daga",
         "maitre": 5,
         "getty_ref": "38v-a",
-        "novati_ref": "10a-f"
+        "novati_ref": "10a-f",
+        "paris_ref": "34r-b"
     },
     {
         "section": "daga",
         "maitre": 5,
         "getty_ref": "38v-b",
-        "novati_ref": "10b-a"
+        "novati_ref": "10b-a",
+        "paris_ref": "34r-d"
     },
     {
         "section": "daga",
         "maitre": 5,
         "getty_ref": "38v-c",
-        "novati_ref": "10b-c"
+        "novati_ref": "10b-c",
+        "paris_ref": "34v-d"
     },
     {
         "section": "daga",
         "maitre": 5,
         "getty_ref": "38v-d",
-        "novati_ref": "10b-b"
+        "novati_ref": "10b-b",
+        "paris_ref": "34v-b"
     },
     {
         "section": "daga",
         "maitre": 5,
         "getty_ref": "15r-a",
-        "novati_ref": "10b-d"
+        "novati_ref": "10b-d",
+        "paris_ref": "35r-b"
     },
     {
         "section": "daga",
         "maitre": 5,
         "getty_ref": "15r-b",
-        "novati_ref": "10b-e"
+        "novati_ref": "10b-e",
+        "paris_ref": "35r-d"
     },
     {
         "section": "daga",
         "maitre": 5,
         "getty_ref": "15r-c",
-        "novati_ref": "10b-f"
+        "novati_ref": "10b-f",
+        "paris_ref": "35v-b"
     },
     {
         "section": "daga",
         "maitre": 5,
         "getty_ref": "15r-d",
-        "novati_ref": "11a-a"
+        "novati_ref": "11a-a",
+        "paris_ref": "35v-d"
     },
     {
         "section": "daga",
@@ -414,13 +458,15 @@
         "section": "daga",
         "maitre": 5,
         "getty_ref": "15v-b",
-        "novati_ref": "11a-c"
+        "novati_ref": "11a-c",
+        "paris_ref": "36r-b"
     },
     {
         "section": "daga",
         "maitre": 5,
         "getty_ref": "15v-c",
-        "novati_ref": "11a-d"
+        "novati_ref": "11a-d",
+        "paris_ref": "36r-d"
     },
     {
         "section": "daga",
@@ -431,7 +477,8 @@
         "section": "daga",
         "maitre": 6,
         "getty_ref": "16r-a",
-        "novati_ref": "11a-e"
+        "novati_ref": "11a-e",
+        "paris_ref": "36v-a"
     },
     {
         "section": "daga",
@@ -482,7 +529,8 @@
         "section": "daga",
         "maitre": 7,
         "getty_ref": "17r-a",
-        "novati_ref": "11b-e"
+        "novati_ref": "11b-e",
+        "paris_ref": "36v-c"
     },
     {
         "section": "daga",
@@ -493,7 +541,8 @@
     {
         "section": "daga",
         "maitre": 8,
-        "getty_ref": "17r-c"
+        "getty_ref": "17r-c",
+        "paris_ref": "37r-a"
     },
     {
         "section": "daga",
@@ -504,7 +553,8 @@
     {
         "section": "daga",
         "maitre": 8,
-        "novati_ref": "12a-c"
+        "novati_ref": "12a-c",
+        "paris_ref": "37r-c"
     },
     {
         "section": "daga",
@@ -532,31 +582,36 @@
         "section": "daga",
         "maitre": 9,
         "getty_ref": "18r-a",
-        "novati_ref": "12b-c"
+        "novati_ref": "12b-c",
+        "paris_ref": "37v-b"
     },
     {
         "section": "daga",
         "maitre": 9,
         "getty_ref": "18r-b",
-        "novati_ref": "12b-b"
+        "novati_ref": "12b-b",
+        "paris_ref": "38r-c"
     },
     {
         "section": "daga",
         "maitre": 9,
         "getty_ref": "18r-c",
-        "novati_ref": "12b-a"
+        "novati_ref": "12b-a",
+        "paris_ref": "38r-a"
     },
     {
         "section": "daga",
         "maitre": 9,
         "getty_ref": "18r-d",
-        "novati_ref": "12a-f"
+        "novati_ref": "12a-f",
+        "paris_ref": "37v-c"
     },
     {
         "section": "daga",
         "maitre": 9,
         "getty_ref": "18v-a",
-        "novati_ref": "12b-d"
+        "novati_ref": "12b-d",
+        "paris_ref": "43r-a"
     },
     {
         "section": "daga",
@@ -582,25 +637,32 @@
         "section": "spada_daga",
         "maitre": 1,
         "getty_ref": "19r-a",
-        "novati_ref": "35a-a"
+        "novati_ref": "35a-a",
+        "morgan_ref": "18r-d"
     },
     {
         "section": "spada_daga",
         "maitre": 1,
         "getty_ref": "19r-b",
-        "novati_ref": "35a-b"
+        "novati_ref": "35a-b",
+        "morgan_ref": "18v-a",
+        "paris_ref": "20r-a"
     },
     {
         "section": "spada_daga",
         "maitre": 1,
         "getty_ref": "19r-c",
-        "novati_ref": "35a-c"
+        "novati_ref": "35a-c",
+        "morgan_ref": "18v-b",
+        "paris_ref": "20r-d"
     },
     {
         "section": "spada_daga",
         "maitre": 1,
         "getty_ref": "19r-d",
-        "novati_ref": "35a-d"
+        "novati_ref": "35a-d",
+        "morgan_ref": "18v-c",
+        "paris_ref": "20v-b"
     },
     {
         "section": "spada_daga",
@@ -611,19 +673,22 @@
         "section": "spada_daga",
         "maitre": 1,
         "getty_ref": "19v-a",
-        "novati_ref": "35b-b"
+        "novati_ref": "35b-b",
+        "morgan_ref": "18v-d"
     },
     {
         "section": "spada_daga",
         "maitre": 1,
         "getty_ref": "19v-b",
-        "novati_ref": "35b-c"
+        "novati_ref": "35b-c",
+        "morgan_ref": "17r-a"
     },
     {
         "section": "spada_daga",
         "maitre": 1,
         "getty_ref": "19v-c",
-        "novati_ref": "35b-d"
+        "novati_ref": "35b-d",
+        "paris_ref": "20v-d"
     },
     {
         "section": "spada_daga",
@@ -639,48 +704,60 @@
     {
         "section": "spada1h",
         "maitre": 1,
-        "getty_ref": "20r-c"
+        "getty_ref": "20r-c",
+        "morgan_ref": "17v-a"
     },
     {
         "section": "spada1h",
         "maitre": 1,
         "getty_ref": "20r-d",
-        "novati_ref": "13a-c"
+        "novati_ref": "13a-c",
+        "morgan_ref": "17v-b",
+        "paris_ref": "10r-d"
     },
     {
         "section": "spada1h",
         "maitre": 1,
         "getty_ref": "20r-d.1",
-        "novati_ref": "13a-d"
+        "novati_ref": "13a-d",
+        "morgan_ref": "17v-b.1",
+        "paris_ref": "10v-b"
     },
     {
         "section": "spada1h",
         "maitre": 1,
         "getty_ref": "21v-c",
-        "novati_ref": "13b-a"
+        "novati_ref": "13b-a",
+        "morgan_ref": "19r-a",
+        "paris_ref": "10v-d"
     },
     {
         "section": "spada1h",
         "maitre": 1,
-        "novati_ref": "13b-b"
+        "novati_ref": "13b-b",
+        "paris_ref": "11r-a"
     },
     {
         "section": "spada1h",
         "maitre": 1,
         "getty_ref": "20v-b",
-        "novati_ref": "14a-a"
+        "novati_ref": "14a-a",
+        "morgan_ref": "17v-d"
     },
     {
         "section": "spada1h",
         "maitre": 1,
         "getty_ref": "20v-a",
-        "novati_ref": "13b-d"
+        "novati_ref": "13b-d",
+        "morgan_ref": "17v-c",
+        "paris_ref": "11v-b"
     },
     {
         "section": "spada1h",
         "maitre": 1,
         "getty_ref": "20v-c",
-        "novati_ref": "13b-c"
+        "novati_ref": "13b-c",
+        "paris_ref": "11r-d"
     },
     {
         "section": "spada1h",
@@ -692,19 +769,22 @@
         "section": "spada1h",
         "maitre": 1,
         "getty_ref": "21r-a",
-        "novati_ref": "14a-b"
+        "novati_ref": "14a-b",
+        "paris_ref": "11v-d"
     },
     {
         "section": "spada1h",
         "maitre": 1,
         "getty_ref": "21r-b",
-        "novati_ref": "14a-d"
+        "novati_ref": "14a-d",
+        "paris_ref": "12r-d"
     },
     {
         "section": "spada1h",
         "maitre": 1,
         "getty_ref": "21r-c",
-        "novati_ref": "14b-a"
+        "novati_ref": "14b-a",
+        "paris_ref": "12r-b"
     },
     {
         "section": "spada1h",
@@ -798,72 +878,96 @@
         "section": "spada2",
         "maitre": "poste",
         "getty_ref": "23v-a",
-        "novati_ref": "18a-a"
+        "novati_ref": "18a-a",
+        "morgan_ref": "12r-a",
+        "paris_ref": "12v-a"
     },
     {
         "section": "spada2",
         "maitre": "poste",
         "getty_ref": "23v-b",
-        "novati_ref": "18a-b"
+        "novati_ref": "18a-b",
+        "morgan_ref": "12r-b",
+        "paris_ref": "12v-b"
     },
     {
         "section": "spada2",
         "maitre": "poste",
         "getty_ref": "23v-c",
-        "novati_ref": "18a-c"
+        "novati_ref": "18a-c",
+        "morgan_ref": "12r-c",
+        "paris_ref": "12v-c"
     },
     {
         "section": "spada2",
         "maitre": "poste",
         "getty_ref": "24r-b",
-        "novati_ref": "18a-d"
+        "novati_ref": "18a-d",
+        "morgan_ref": "12r-d",
+        "paris_ref": "12v-d"
     },
     {
         "section": "spada2",
         "maitre": "poste",
         "getty_ref": "24r-a",
-        "novati_ref": "18b-a"
+        "novati_ref": "18b-a",
+        "morgan_ref": "12v-a",
+        "paris_ref": "13r-a"
     },
     {
         "section": "spada2",
         "maitre": "poste",
         "getty_ref": "24v-c",
-        "novati_ref": "18b-b"
+        "novati_ref": "18b-b",
+        "morgan_ref": "12v-b",
+        "paris_ref": "13r-b"
     },
     {
         "section": "spada2",
         "maitre": "poste",
-        "novati_ref": "18b-c"
+        "novati_ref": "18b-c",
+        "morgan_ref": "12v-c",
+        "paris_ref": "13r-c"
     },
     {
         "section": "spada2",
         "maitre": "poste",
         "getty_ref": "24r-d",
-        "novati_ref": "18b-d"
+        "novati_ref": "18b-d",
+        "morgan_ref": "12v-d",
+        "paris_ref": "13r-d"
     },
     {
         "section": "spada2",
         "maitre": "poste",
         "getty_ref": "24r-c",
-        "novati_ref": "19a-a"
+        "novati_ref": "19a-a",
+        "morgan_ref": "13r-a",
+        "paris_ref": "13v-a"
     },
     {
         "section": "spada2",
         "maitre": "poste",
         "getty_ref": "23v-d",
-        "novati_ref": "19a-b"
+        "novati_ref": "19a-b",
+        "morgan_ref": "13r-b",
+        "paris_ref": "13v-b"
     },
     {
         "section": "spada2",
         "maitre": "poste",
         "getty_ref": "24v-a",
-        "novati_ref": "19a-c"
+        "novati_ref": "19a-c",
+        "morgan_ref": "13r-c",
+        "paris_ref": "13v-c"
     },
     {
         "section": "spada2",
         "maitre": "poste",
         "getty_ref": "24v-b",
-        "novati_ref": "19a-d"
+        "novati_ref": "19a-d",
+        "morgan_ref": "13r-d",
+        "paris_ref": "13v-d"
     },
     {
         "section": "spada2",
@@ -879,91 +983,112 @@
         "section": "spada2",
         "maitre": "largo",
         "getty_ref": "25r-c",
-        "novati_ref": "19b-a"
+        "novati_ref": "19b-a",
+        "morgan_ref": "13v-a",
+        "paris_ref": "14r-a"
     },
     {
         "section": "spada2",
         "maitre": "largo",
         "getty_ref": "25r-d",
-        "novati_ref": "19b-b"
+        "novati_ref": "19b-b",
+        "morgan_ref": "13v-b",
+        "paris_ref": "14r-c"
     },
     {
         "section": "spada2",
         "maitre": "mezzo",
         "getty_ref": "25v-a",
-        "novati_ref": "19b-c"
+        "novati_ref": "19b-c",
+        "morgan_ref": "13v-c",
+        "paris_ref": "14v-a"
     },
     {
         "section": "spada2",
         "maitre": "mezzo",
         "getty_ref": "25v-b",
-        "novati_ref": "19b-d"
+        "novati_ref": "19b-d",
+        "morgan_ref": "13v-d",
+        "paris_ref": "14v-c"
     },
     {
         "section": "spada2",
         "maitre": "mezzo",
         "getty_ref": "25v-c",
-        "novati_ref": "20a-a"
+        "novati_ref": "20a-a",
+        "morgan_ref": "14r-a"
     },
     {
         "section": "spada2",
         "maitre": "mezzo",
         "getty_ref": "25v-d",
-        "novati_ref": "20a-b"
+        "novati_ref": "20a-b",
+        "morgan_ref": "14r-b"
     },
     {
         "section": "spada2",
         "maitre": "mezzo",
         "getty_ref": "26r-a",
-        "novati_ref": "20a-c"
+        "novati_ref": "20a-c",
+        "morgan_ref": "14r-c"
     },
     {
         "section": "spada2",
         "maitre": "mezzo",
         "getty_ref": "26r-b",
-        "novati_ref": "20a-d"
+        "novati_ref": "20a-d",
+        "morgan_ref": "14r-d"
     },
     {
         "section": "spada2",
         "maitre": "mezzo",
         "getty_ref": "26r-c",
-        "novati_ref": "20b-a"
+        "novati_ref": "20b-a",
+        "morgan_ref": "14v-a"
     },
     {
         "section": "spada2",
         "maitre": "mezzo",
         "getty_ref": "26r-d",
-        "novati_ref": "20b-b"
+        "novati_ref": "20b-b",
+        "morgan_ref": "14v-b"
     },
     {
         "section": "spada2",
         "maitre": "mezzo",
         "getty_ref": "26v-a",
-        "novati_ref": "20b-c"
+        "novati_ref": "20b-c",
+        "morgan_ref": "14v-c",
+        "paris_ref": "15r-a"
     },
     {
         "section": "spada2",
         "maitre": "mezzo",
         "getty_ref": "26v-b",
-        "novati_ref": "20b-d"
+        "novati_ref": "20b-d",
+        "morgan_ref": "14v-d",
+        "paris_ref": "15r-c"
     },
     {
         "section": "spada2",
         "maitre": "mezzo",
         "getty_ref": "26v-c",
-        "novati_ref": "21a-b"
+        "novati_ref": "21a-b",
+        "paris_ref": "15v-a"
     },
     {
         "section": "spada2",
         "maitre": "mezzo",
         "getty_ref": "26v-d",
-        "novati_ref": "21a-a"
+        "novati_ref": "21a-a",
+        "paris_ref": "15v-d"
     },
     {
         "section": "spada2",
         "maitre": "mezzo",
         "getty_ref": "27r-a",
-        "novati_ref": "21a-c"
+        "novati_ref": "21a-c",
+        "paris_ref": "26r-b"
     },
     {
         "section": "spada2",
@@ -987,7 +1112,8 @@
         "section": "spada2",
         "maitre": "mezzo",
         "getty_ref": "27v-a",
-        "novati_ref": "21b-c"
+        "novati_ref": "21b-c",
+        "paris_ref": "28v-c"
     },
     {
         "section": "spada2",
@@ -1003,53 +1129,68 @@
     {
         "section": "spada2",
         "maitre": "stretto",
-        "getty_ref": "27v-d"
+        "getty_ref": "27v-d",
+        "morgan_ref": "16r-t"
     },
     {
         "section": "spada2",
         "maitre": "stretto",
         "getty_ref": "28r-a",
-        "novati_ref": "22a-a"
+        "novati_ref": "22a-a",
+        "morgan_ref": "16r-a"
     },
     {
         "section": "spada2",
         "maitre": "stretto",
         "getty_ref": "28r-b",
-        "novati_ref": "22a-b"
+        "novati_ref": "22a-b",
+        "morgan_ref": "16r-b",
+        "paris_ref": "26r-c"
     },
     {
         "section": "spada2",
         "maitre": "stretto",
         "getty_ref": "28r-c",
-        "novati_ref": "22a-c"
+        "novati_ref": "22a-c",
+        "morgan_ref": "16r-c",
+        "paris_ref": "26v-a"
     },
     {
         "section": "spada2",
         "maitre": "stretto",
         "getty_ref": "28r-d",
-        "novati_ref": "22a-d"
+        "novati_ref": "22a-d",
+        "morgan_ref": "16r-d",
+        "paris_ref": "26v-c"
     },
     {
         "section": "spada2",
         "maitre": "stretto",
         "getty_ref": "28v-a",
-        "novati_ref": "22b-a"
+        "novati_ref": "22b-a",
+        "morgan_ref": "16v-a",
+        "paris_ref": "27r-c"
     },
     {
         "section": "spada2",
         "maitre": "stretto",
-        "novati_ref": "22b-c"
+        "novati_ref": "22b-c",
+        "morgan_ref": "15r-c",
+        "paris_ref": "30r-a"
     },
     {
         "section": "spada2",
         "maitre": "stretto",
-        "getty_ref": "28v-b"
+        "getty_ref": "28v-b",
+        "morgan_ref": "16v-b"
     },
     {
         "section": "spada2",
         "maitre": "stretto",
         "getty_ref": "28v-c",
-        "novati_ref": "23a-b"
+        "novati_ref": "23a-b",
+        "morgan_ref": "16v-c",
+        "paris_ref": "27r-b"
     },
     {
         "section": "spada2",
@@ -1075,25 +1216,30 @@
     {
         "section": "spada2",
         "maitre": "stretto",
-        "getty_ref": "29r-d"
+        "getty_ref": "29r-d",
+        "morgan_ref": "15v-a"
     },
     {
         "section": "spada2",
         "maitre": "stretto",
         "getty_ref": "29v-a",
-        "novati_ref": "22b-b"
+        "novati_ref": "22b-b",
+        "morgan_ref": "15v-a.1",
+        "paris_ref": "30v-a"
     },
     {
         "section": "spada2",
         "maitre": "stretto",
         "getty_ref": "29v-b",
-        "novati_ref": "22b-d"
+        "novati_ref": "22b-d",
+        "paris_ref": "27v-a"
     },
     {
         "section": "spada2",
         "maitre": "stretto",
         "getty_ref": "29v-c",
-        "novati_ref": "23b-d"
+        "novati_ref": "23b-d",
+        "paris_ref": "28r-d"
     },
     {
         "section": "spada2",
@@ -1119,56 +1265,71 @@
         "section": "spada2",
         "maitre": "stretto",
         "getty_ref": "30r-a",
-        "novati_ref": "23a-c"
+        "novati_ref": "23a-c",
+        "morgan_ref": "16v-d"
     },
     {
         "section": "spada2",
         "maitre": "stretto",
-        "getty_ref": "30r-b"
+        "getty_ref": "30r-b",
+        "morgan_ref": "15r-d",
+        "paris_ref": "30r-c"
     },
     {
         "section": "spada2",
         "maitre": "stretto",
-        "novati_ref": "23a-d"
+        "novati_ref": "23a-d",
+        "paris_ref": "28v-a"
     },
     {
         "section": "spada2",
         "maitre": "stretto",
-        "novati_ref": "24a-a"
+        "novati_ref": "24a-a",
+        "paris_ref": "30v-c"
     },
     {
         "section": "spada2",
         "maitre": "stretto",
         "getty_ref": "30r-c",
-        "novati_ref": "24a-b"
+        "novati_ref": "24a-b",
+        "morgan_ref": "15r-a",
+        "paris_ref": "29r-a"
     },
     {
         "section": "spada2",
         "maitre": "stretto",
-        "getty_ref": "30r-d"
+        "getty_ref": "30r-d",
+        "morgan_ref": "15r-b"
     },
     {
         "section": "spada2",
         "maitre": "stretto",
         "getty_ref": "30v-a",
-        "novati_ref": "24a-c"
+        "novati_ref": "24a-c",
+        "morgan_ref": "15v-b",
+        "paris_ref": "29r-d"
     },
     {
         "section": "spada2",
         "maitre": "stretto",
         "getty_ref": "30v-b",
-        "novati_ref": "24a-d"
+        "novati_ref": "24a-d",
+        "morgan_ref": "15v-c",
+        "paris_ref": "29v-b"
     },
     {
         "section": "spada2",
         "maitre": "stretto",
         "getty_ref": "30v-c",
-        "novati_ref": "24b-a"
+        "novati_ref": "24b-a",
+        "morgan_ref": "15v-d",
+        "paris_ref": "29v-d"
     },
     {
         "section": "spada2",
         "maitre": "segno",
         "getty_ref": "32r",
-        "novati_ref": "17a"
+        "novati_ref": "17a",
+        "paris_ref": "01v"
     }
 ]
