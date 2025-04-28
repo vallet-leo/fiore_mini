@@ -284,7 +284,7 @@ function updateDropdowns() {
     ['fr', 'en', 'o'].forEach(lang => {
         if (hasGettyVer) {
             const li = document.createElement('li');
-            li.textContent = `Getty | ${lang}`;
+            li.textContent = `Getty | ${lang}`;
             li.onclick = () => handleVersionSelect('getty', lang);
             if ((lang === state.lang) && (state.source === 'getty')) li.classList.add('selected');
             versionDropdown.appendChild(li);
@@ -297,7 +297,7 @@ function updateDropdowns() {
     ['fr', 'en', 'o'].forEach(lang => {
         if (hasNovatiVer) {
             const li = document.createElement('li');
-            li.textContent = `Novati | ${lang}`;
+            li.textContent = `Novati | ${lang}`;
             li.onclick = () => handleVersionSelect('novati', lang);
             if ((lang === state.lang) && (state.source === 'novati')) li.classList.add('selected');
             versionDropdown.appendChild(li);
@@ -310,7 +310,7 @@ function updateDropdowns() {
     ['fr', 'en', 'o'].forEach(lang => {
         if (hasMorganVer) {
             const li = document.createElement('li');
-            li.textContent = `Morgan | ${lang}`;
+            li.textContent = `Morgan | ${lang}`;
             li.onclick = () => handleVersionSelect('morgan', lang);
             if ((lang === state.lang) && (state.source === 'morgan')) li.classList.add('selected');
             versionDropdown.appendChild(li);
@@ -323,7 +323,7 @@ function updateDropdowns() {
     ['fr', 'en', 'o'].forEach(lang => {
         if (hasParisVer) {
             const li = document.createElement('li');
-            li.textContent = `Paris | ${lang}`;
+            li.textContent = `Paris | ${lang}`;
             li.onclick = () => handleVersionSelect('paris', lang);
             if ((lang === state.lang) && (state.source === 'paris')) li.classList.add('selected');
             versionDropdown.appendChild(li);
