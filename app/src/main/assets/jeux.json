@@ -1,5 +1,152 @@
 [
     {
+        "section": "lutte",
+        "maitre": "guardie",
+        "novati_ref": "4a-t"
+    },
+    {
+        "section": "lutte",
+        "maitre": "guardie",
+        "getty_ref": "6r-a",
+        "novati_ref": "4a-a"
+    },
+    {
+        "section": "lutte",
+        "maitre": "guardie",
+        "getty_ref": "6r-b",
+        "novati_ref": "4a-b"
+    },
+    {
+        "section": "lutte",
+        "maitre": "guardie",
+        "getty_ref": "6r-c",
+        "novati_ref": "4a-c"
+    },
+    {
+        "section": "lutte",
+        "maitre": "guardie",
+        "getty_ref": "6r-d",
+        "novati_ref": "4a-d"
+    },
+    {
+        "section": "lutte",
+        "maitre": "abrazare",
+        "getty_ref": "6v-a",
+        "novati_ref": "4b-a"
+    },
+    {
+        "section": "lutte",
+        "maitre": "abrazare",
+        "getty_ref": "6v-b",
+        "novati_ref": "4b-b"
+    },
+    {
+        "section": "lutte",
+        "maitre": "abrazare",
+        "getty_ref": "6v-c",
+        "novati_ref": "4b-c"
+    },
+    {
+        "section": "lutte",
+        "maitre": "abrazare",
+        "getty_ref": "6v-d",
+        "novati_ref": "4b-d"
+    },
+    {
+        "section": "lutte",
+        "maitre": "abrazare",
+        "getty_ref": "7r-a",
+        "novati_ref": "4b-e"
+    },
+    {
+        "section": "lutte",
+        "maitre": "abrazare",
+        "getty_ref": "7r-b",
+        "novati_ref": "4b-f"
+    },
+    {
+        "section": "lutte",
+        "maitre": "abrazare",
+        "getty_ref": "7r-c",
+        "novati_ref": "5a-a"
+    },
+    {
+        "section": "lutte",
+        "maitre": "abrazare",
+        "getty_ref": "7r-d",
+        "novati_ref": "5a-b"
+    },
+    {
+        "section": "lutte",
+        "maitre": "abrazare",
+        "getty_ref": "7v-a",
+        "novati_ref": "5a-c"
+    },
+    {
+        "section": "lutte",
+        "maitre": "abrazare",
+        "getty_ref": "7v-b",
+        "novati_ref": "5a-d"
+    },
+    {
+        "section": "lutte",
+        "maitre": "abrazare",
+        "getty_ref": "7v-c",
+        "novati_ref": "5a-e"
+    },
+    {
+        "section": "lutte",
+        "maitre": "abrazare",
+        "getty_ref": "7v-d",
+        "novati_ref": "5a-f"
+    },
+    {
+        "section": "lutte",
+        "maitre": "abrazare",
+        "getty_ref": "8r-a",
+        "novati_ref": "5b-a"
+    },
+    {
+        "section": "lutte",
+        "maitre": "abrazare",
+        "getty_ref": "8r-b",
+        "novati_ref": "5b-b"
+    },
+    {
+        "section": "lutte",
+        "maitre": "abrazare",
+        "getty_ref": "8r-c",
+        "novati_ref": "5b-c"
+    },
+    {
+        "section": "lutte",
+        "maitre": "abrazare",
+        "getty_ref": "8r-d",
+        "novati_ref": "5b-d"
+    },
+    {
+        "section": "lutte",
+        "maitre": "bastoncello",
+        "getty_ref": "8v-a",
+        "novati_ref": "5b-e"
+    },
+    {
+        "section": "lutte",
+        "maitre": "bastoncello",
+        "getty_ref": "8v-b",
+        "novati_ref": "5b-f"
+    },
+    {
+        "section": "lutte",
+        "maitre": "bastoncello",
+        "getty_ref": "8v-c"
+    },
+    {
+        "section": "lutte",
+        "maitre": "bastoncello",
+        "getty_ref": "8v-d"
+    },
+    {
         "section": "daga",
         "maitre": 0,
         "getty_ref": "09r"
