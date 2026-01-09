@@ -14,7 +14,7 @@ let state = JSON.parse(localStorage.getItem('fioremini_state')) || {
 };
 
 // Constants
-const sections = ["intros", "daga","spada_daga","spada1h","spada2"];
+const sections = ["intros", "lutte", "daga","spada_daga","spada1h","spada2"];
 const manuscriptDict = { "getty": "🄶", "novati": "🄽", "paris": "🄿", "morgan": "🄼" };
 
 // DOM Elements
